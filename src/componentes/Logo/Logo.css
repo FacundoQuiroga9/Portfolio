@@ -1,0 +1,18 @@
+
+.logo-container{
+  width: 5rem;
+}
+.logo{
+  fill: white;
+  cursor: pointer;
+  transition: all .5s;
+}
+.logo:hover{
+  fill: #170C18;
+}
+
+@media (min-width: 480px){
+  .logo-container{
+    width: 6rem;
+  }
+}

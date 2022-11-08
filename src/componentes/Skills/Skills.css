@@ -1,0 +1,190 @@
+.skills-contenedor{
+  padding: 4rem 0;
+  margin: 0 auto;
+  max-width: 80vw;
+  text-align: end;
+  color: white;
+  scroll-margin-top: 7rem;
+}
+.skills-title{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.skills-title span{
+  color: blueviolet;
+}
+.skills-info-contenedor{
+  width: 100%;
+}
+
+.skills-info-contenido-subtitulo{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+.skills-info-contenido-logos{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.skills-info-contenido-logos svg{
+  max-width: 2rem;
+  margin: 1rem;
+}
+.skills-info-contenido-logos svg:hover{
+  transform: scale(1.3);
+}
+
+.logo-typescript:hover .fondo{
+  fill: #007ACC;
+}
+.logo-typescript:hover .letra{
+  fill: #ffffff;
+}
+.logo-react:hover path, .logo-react:hover circle{
+  fill: #53C1DE;
+}
+.logo-vite:hover .fondo{
+  fill: #8e70fe;
+}
+.logo-vite:hover .rayito{
+  fill: #ffc71f;
+}
+.logo-sass:hover path{
+  fill: #cd6799;
+}
+.logo-illustrator:hover .fondo{
+  fill: #330000;
+}
+.logo-illustrator:hover .letra{
+  fill: #ff9a00;
+}
+.logo-photoshop:hover .fondo{
+  fill: #001e36;
+}
+.logo-photoshop:hover .letra{
+  fill: #31a8ff;
+}
+.logo-figma:hover .bola1{
+  fill: #f24e1e;
+}
+.logo-figma:hover .bola2{
+  fill: #ff7262;
+}
+.logo-figma:hover .bola3{
+  fill: #a259ff;
+}
+.logo-figma:hover .bola4{
+  fill: #1abcfe;
+}
+.logo-figma:hover .bola5{
+  fill: #0acf83;
+}
+.logo-git:hover path{ 
+  fill: #de4c36;
+}
+.logo-wordpress:hover path{
+  fill: #00749a;
+}
+.logo-bootstrap:hover path{
+  fill: #7952b3;
+}
+.logo-github:hover path{
+  fill: white;
+}
+.logo-vscode:hover .part1{
+  fill: #3c99d4;
+}
+.logo-vscode:hover .part2{
+  fill: #2489ca;
+}
+.logo-vscode:hover .part3{
+  fill: #0877b9;
+}
+.logo-vscode:hover .part4{
+  fill: #1070b3;
+}
+.logo-js:hover .fondo{
+  fill: #f7df1e;
+}
+.logo-js:hover .letra{
+  fill: #000000;
+}
+.logo-css:hover .fondo{
+  fill: #265aa6;
+}
+.logo-css:hover .fondo2{
+  fill: #449dd7;
+}
+.logo-css:hover .titulo{
+  fill: white;
+}
+.logo-css:hover .centro{
+  fill: #ededed;
+}
+
+.logo-html:hover .fondo{
+  fill: #e44d26;
+}
+.logo-html:hover .fondo2{
+  fill: #f16529;
+}
+.logo-html:hover .titulo{
+  fill: white;
+}
+.logo-html:hover .letra{
+  fill: #ededed;
+}
+
+@media screen and (min-width: 420px){
+  .skills-title{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 2.5rem;
+  }
+  .skills-info-contenido-subtitulo{
+    font-size: 1.3rem;
+  }
+
+  .skills-info-contenido-logos svg{
+    max-width: 2.5rem;
+  }
+
+}
+
+@media screen and (min-width: 750px){
+  .skills-title{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 3rem;
+  }
+  .skills-info-contenido-subtitulo{
+    font-size: 1.6rem;
+  }
+
+  .skills-info-contenido-logos svg{
+    max-width: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .skills-info-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .skills-info-contenido-contenedor{
+    width: 35vw;
+    margin: 0 2rem;
+  }
+
+  .skills-info-contenido-logos svg{
+    max-width: 4rem;
+    margin: 1 1.5rem;
+  }
+}

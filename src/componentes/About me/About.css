@@ -1,0 +1,72 @@
+.aboutMe-contenedor{
+  margin-top: 3rem;
+  color: white;
+  scroll-margin-top: 7rem;
+}
+.aboutMe-info-contenedor{
+padding: 1.8rem;
+height: 30rem;
+}
+.aboutMe-info-titulo{
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.aboutMe-info-titulo span{
+  color: blueviolet;
+}
+.aboutMe-info-texto{
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.aboutMe-foto-contenedor{
+  display: none;
+}
+
+@media screen and (min-width: 420px){
+  .aboutMe-info-titulo{
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .aboutMe-info-texto{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 750px){
+  .aboutMe-info-titulo{
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .aboutMe-info-texto{
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .aboutMe-contenedor{
+    display: flex;
+    justify-content: space-between;
+  }
+  .aboutMe-info-contenedor{
+    max-width: 70%;
+  padding: 1.8rem;
+  }
+  .aboutMe-info-titulo{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .aboutMe-info-texto{
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .aboutMe-foto-contenedor{
+    display: block;
+    min-width: 30vw;
+  }
+}
