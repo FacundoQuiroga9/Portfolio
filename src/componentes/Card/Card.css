@@ -34,20 +34,21 @@
 .card-info-descripcion{
   font-size: .8rem;
 }
-.card-info-button{
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1.5rem;
 
-}
+
 .card-info-button:hover{
   color: blueviolet;
 
 }
+.enlaces-contenedor{
+  display: flex;
+  margin-top: 1rem;
+}
+
 .card-info-button-icon{
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 .5rem;
 }
 
 @media screen and (min-width: 420px){
@@ -64,13 +65,7 @@
   .card-info-descripcion{
     font-size: 1rem;
   }
-  .card-info-button{
-    max-width: 1.7rem;
-  
-  }
-  .card-info-button-icon{
-    height: 1.7rem;
-  }
+
 
 }
 
@@ -93,12 +88,10 @@
     font-size: 1.8rem;
     line-height: 2rem;
   }
-  .card-info-button{
-    max-width: 2.5rem;
-  
-  }
   .card-info-button-icon{
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 .5rem;
   }
 }
 
@@ -133,13 +126,11 @@
      font-size: 1rem;
      line-height: 1.2rem;
    }
-   .card-info-button{
-     max-width: 2rem;
-   
-   }
    .card-info-button-icon{
-     height: 2rem;
-   }
+    width: 2rem;
+    height: 2rem;
+    margin: 0 .5rem;
+  }
 }
 
 
