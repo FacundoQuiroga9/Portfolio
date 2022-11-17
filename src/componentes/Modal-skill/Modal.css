@@ -1,0 +1,85 @@
+.skill-modal-desactivado{
+  display: none;
+}
+.skill-modal-contenedor{
+  display: flex;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: rgba(0, 0, 0, 0.64);
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.skill-modal{
+  border: .5rem solid blueviolet;
+  border-radius: 1rem ;
+  min-height: 20vh;
+  width: 90vw;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem;
+  background-color: #170C18 !important;
+}
+.boton-container{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.boton-container>i{
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.boton-container>i:hover{
+  color: blueviolet;
+}
+
+.skill-modal>img{
+  width: 3rem;
+}
+.skill-modal-informacion{
+  line-height: 1.2rem;
+  font-size: .8rem;
+  margin:  1rem .8rem;
+}
+
+@media screen and (min-width: 420px){
+  .skill-modal-informacion{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .skill-modal>img{
+    width: 4rem;
+  }
+}
+@media screen and (min-width: 750px){
+  .skill-modal-informacion{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .skill-modal{
+    max-width: 70vw;
+  }
+  .skill-modal>img{
+    width: 5rem;
+  }
+}
+@media screen and (min-width: 1000px){
+  .skill-modal-informacion{
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+  .skill-modal{
+    max-width: 50vw;
+  }
+  .skill-modal>img{
+    width: 6rem;
+  }
+}
