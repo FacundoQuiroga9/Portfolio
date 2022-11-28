@@ -1,0 +1,84 @@
+{
+  "navbar":{
+    "about-me": "About me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero":{
+    "job":"WEB DEVELOPER",
+    "welcome":"Hello! Welcome to my portfolio. You will find all my professional information here.",
+    "button": "Download CV"
+  },
+  "about":{
+    "section":"About me",
+    "text":"When I started programming I discovered a world with a lot of possibilities to explore my knowledge and creativity. Since then, I have been involved in constant learning, allowing me to improve myself as a web developer."
+  },
+  "skills":{
+    "section":"Habilidades",
+    "development":{
+      "title":"WEB DEVELOPMENT",
+      "html": "Html is a markup language for creating web pages. It defines a basic structure and a code (called HTML code) for the definition of the content of a web page, such as text, images, videos, games, among others.",
+      "css": "CSS is a graphic design language for defining and creating the presentation of a structured document written in a markup language. It is widely used to establish the visual design of web documents, and user interfaces written in HTML.",
+      "javascript": "JavScript is an interpreted programming language, a dialect of the ECMAScript standard. It is defined as object-oriented, prototype-based, imperative, weakly typed, and dynamic. It is primarily used on the client side, implemented as part of a web browser allowing for user interface enhancements and dynamic web pages.",
+      "typescript": "TypeScript is a superset of JavaScript, essentially adding static types and class-based objects.",
+      "react": "React is an open source Javascript library designed to create user interfaces with the goal of making it easy to develop single-page applications.",
+      "vite": "Vite is a Frontend tool that allows you to create Javascript applications using a framework or library such as ReactJs, Vuejs, Angular, either with a specific framework or Vanillajs.",
+      "sass": "Sass is a CSS metalanguage. It is a script language that is translated into CSS, SassScript is the script language itself.",
+      "bootstrap": "Bootstrap is a cross-platform library for website and web application design. It contains HTML and CSS based layout elements as well as additional JavaScript extensions. Unlike many web frameworks, it only deals with front-end development.",
+      "vs-code": "Visual Studio Code is a source code editor.",
+      "git": "Git is version control software. Its purpose is to keep track of changes to computer files, including coordinating the work that several people do on shared files in a code repository.",
+      "github": "Github is a forge (collaborative development platform) for hosting projects using the Git version control system.",
+      "wordpress": "Wordpress is a content management system, focused on the creation of any type of web page."
+    },
+    "design":{
+      "title":"DESIGN",
+      "figma": "Figma is a vector graphics editor and prototyping tool, primarily web-based.",
+      "illustrator": "Adobe Illustrator is a vector graphics editor used to edit, among other things.",
+      "photoshop": "Adobe Photoshop is a photo editor used primarily for retouching photos and graphics."
+
+    }
+  },
+  "projects":{
+    "section": "Projects",
+    "card1":{
+      "title": "Music player",
+      "techs": "HTML, CSS and Javascript"
+    },
+    "card2":{
+      "title": "Media player",
+      "techs": "HTML, CSS and Javascript"
+    },
+    "card3":{
+      "title": "Calculator",
+      "techs": "HTML, CSS, Javascript and React"
+    },
+    "card4":{
+      "title": "Task notepad",
+      "techs": "HTML, CSS, Javascript and React"
+    },
+    "card5":{
+      "title": "Lyrics search",
+      "techs": "HTML, CSS and Javascript"
+    }
+  },
+  "contact":{
+    "section": "Contact",
+    "name": "NAME",
+    "e-mail":"E-MAIL",
+    "placeholder":"example@example.com",
+    "message": "MESSAGE",
+    "button": "Send",
+    "err-name":"Your name is too short",
+    "err-e-mail":"Your e-mail is invalid",
+    "err-message": "Your message is too short",
+    "modal":{
+      "thanks":"Thank you for your message!",
+      "button": "Continue"
+    }
+  },
+  "footer":{
+    "text": "Developed with love by Facundo Quiroga"
+  }
+  
+}

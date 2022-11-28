@@ -1,7 +1,10 @@
 import './Hero.css'
 import fotofq1 from '../../imagenes/FacundoQuiroga2.png'
+import {useTranslation} from 'react-i18next'
 
 const Hero = ()=>{
+  const [t, i18n]= useTranslation("global")
+
   return(
     <section id="section-hero" className="hero-contenedor">
       <div className="contenedor-prueba">
@@ -10,9 +13,9 @@ const Hero = ()=>{
       </div>
       <div className='hero-info-contenedor'>
         <h1 className="hero-info-nombre">Facundo Quiroga</h1>
-        <h2 className="hero-info-trabajo">DESARROLLADOR WEB</h2>
-        <p className="hero-info-text">Hola! Bienvenido a mi portfolio. Aquí encontrarás toda mi información profesional.</p>
-        <button className="hero-info-cv"><a href='/cv.pdf' target='_blanck' download='cvFacundoQuiroga.pdf'>Descargar CV</a></button>
+        <h2 className="hero-info-trabajo">{t("hero.job")}</h2>
+        <p className="hero-info-text">{t("hero.welcome")}</p>
+        <button className="hero-info-cv"><a href='/cv.pdf' target='_blanck' download='cvFacundoQuiroga.pdf'>{t("hero.button")}</a></button>
       </div>
       </div>
       

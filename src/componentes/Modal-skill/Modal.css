@@ -2,6 +2,7 @@
   display: none;
 }
 .skill-modal-contenedor{
+  user-select: none;
   display: flex;
   position: fixed;
   top:0;

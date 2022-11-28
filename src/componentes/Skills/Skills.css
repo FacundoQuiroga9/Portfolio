@@ -237,6 +237,9 @@
     width: 35vw;
     margin: 0 2rem;
   }
+  .skills-title{
+    margin-right: -4.5rem;
+  }
 
   .skills-info-contenido-logos svg{
     max-width: 4rem;
