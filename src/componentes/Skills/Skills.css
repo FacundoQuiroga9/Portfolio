@@ -119,7 +119,7 @@
 .logo-figma:hover .bola5{
   fill: #0acf83;
 }
-.logo-git:hover path{ 
+.logo-git:hover path{
   fill: #de4c36;
 }
 .logo-wordpress:hover path{
@@ -216,6 +216,7 @@
   }
 
   .picture-container{
+    padding: 0;
     max-width: 6rem;
     margin: 1rem .5rem;
   }

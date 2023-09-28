@@ -1,0 +1,10 @@
+.ruby-path{
+  fill: blueviolet;
+}
+.ruby-logo:hover .ruby-path{
+  fill: #d91404
+}
+
+.modal-svg > .ruby-path{
+  fill:#c00
+}

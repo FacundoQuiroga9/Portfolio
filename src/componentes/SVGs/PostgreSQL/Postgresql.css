@@ -1,0 +1,39 @@
+.path1{
+  fill: blueviolet;
+}
+.path2{
+  fill: blueviolet;
+}
+.path3{
+  fill: #170C18;
+}
+
+.path4{
+  fill: #170C18;
+}
+
+.postgresql-logo:hover .path3{
+  fill: white;
+}
+.postgresql-logo:hover .path4{
+  fill: white;
+}
+.postgresql-logo:hover .path1{
+  fill: black;
+}
+.postgresql-logo:hover .path2{
+  fill: #336791;
+}
+.modal-svg .path3{
+  fill: white;
+}
+.modal-svg .path1{
+  fill: black;
+}
+
+.modal-svg .path4{
+  fill: white;
+}
+.modal-svg .path2{
+  fill: #336791;
+}

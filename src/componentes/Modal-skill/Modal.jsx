@@ -9,7 +9,7 @@ const Modal = ({estado, cambiarEstado, descripcion, imagen})=>{
         <div className='boton-container'>
         <i onClick={()=> cambiarEstado(false)} class="bi bi-x-lg"></i>
         </div>
-        <img src={imagen} alt="" />
+        {imagen}
         <p className="skill-modal-informacion">{descripcion}</p>
       </div>
     </div>
