@@ -2,7 +2,6 @@ import './Navbar.css'
 import Logo from '../Logo/Logo'
 import gb from '../../imagenes/gb.svg'
 import español from '../../imagenes/es.svg'
-import brasil from '../../imagenes/br.svg'
 import { useState } from 'react'
 import {useTranslation} from 'react-i18next'
 
@@ -13,7 +12,7 @@ const Navbar = ()=>{
     setMenu(!menu)
     setClassSpan(!classSpan)
   }
-  
+
   const [t, i18n]= useTranslation("global")
 
   const changeLng=(lng)=>{
@@ -21,7 +20,7 @@ const Navbar = ()=>{
     localStorage.setItem("lng",lng)
   }
   return(
-    <header className="header">      
+    <header className="header">
         <Logo />
         <button className='header-button' onClick={openMenu}>
           <span className={`top-line-${classSpan ? "clicked": "unclicked"}`}></span>
@@ -37,7 +36,6 @@ const Navbar = ()=>{
             <ul className='flags'>
               <li className="flag-li" onClick={()=>changeLng("es")}><img src={español} alt="bandera de Brasil" className='flag' /></li>
               <li className="flag-li" onClick={()=>changeLng("en")}><img src={gb} alt="bandera de Gran Betaña" className='flag' /></li>
-              <li className="flag-li" onClick={()=>changeLng("br")}><img src={brasil} alt="bandera de Brasil" className='flag' /></li>
             </ul>
           </ul>
         </nav>

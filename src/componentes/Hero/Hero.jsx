@@ -5,7 +5,7 @@ import {useTranslation} from 'react-i18next'
 
 const Hero = ()=>{
   const [t, i18n]= useTranslation("global")
-  
+
   const lng = localStorage.getItem("lng") || "es"
 
   return(
@@ -18,10 +18,10 @@ const Hero = ()=>{
         <h1 className="hero-info-nombre">Facundo Quiroga</h1>
         <h2 className="hero-info-trabajo">{t("hero.job")}</h2>
         <p className="hero-info-text">{t("hero.welcome")}</p>
-        <button className="hero-info-cv"><a href={`/cv-${lng}.pdf`} target='_blanck' download='cvFacundoQuiroga.pdf'>{t("hero.button")}</a></button>
+        <button className="hero-info-cv"><a href={`/resume.pdf`} target='_blanck' download='Resume_Facundo_Quiroga.pdf'>{t("hero.button")}</a></button>
       </div>
       </div>
-      
+
     </section>
   )
 }

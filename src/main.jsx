@@ -6,20 +6,16 @@ import {I18nextProvider} from 'react-i18next'
 import i18next from "i18next"
 import global_es from './languages/es/global.json'
 import global_en from './languages/en/global.json'
-import global_br from './languages/br/global.json'
 
 i18next.init({
   interpolation:{escapeValue: false},
-  lng: localStorage.getItem("lng") ||"es",
+  lng: localStorage.getItem("lng") ||"en",
   resources: {
     es:{
       global: global_es
     },
     en:{
       global: global_en
-    },
-    br:{
-      global: global_br
     }
   }
 })

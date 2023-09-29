@@ -12,74 +12,19 @@ font-weight: bold;
 .section-title span{
   color: blueviolet;
 }
-.formulario-imagen{
-  display: none;
-}
-.formulario{
-  display: flex;
-  flex-direction: column;
-  margin: 2rem auto;
-  width: 90vw;
-  justify-content: flex-start;
-  border: solid .3rem blueviolet;
-  padding: 1rem 2rem;
-  border-radius: 20px;
-}
-label{
-  margin-top: .8rem;
-}
-input, textarea{
-  margin: .5rem .5rem 1rem 0 ;
-  border-radius: 10px;
-  outline: none;
-  border: none;
-  padding: 1rem;
-  resize: none;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: .8rem;
-}
-textarea{
-  height: 15vh;
-}
-.formulario-nombre, .formulario-mail, .formulario-mensaje{
-  background-color: #3b1f3d;
-}
- 
 span{
   font-weight: bold;
 }
 
-.formulario-boton{
-border: none;
-background-color: blueviolet;
-color: white;
-border-radius: 20px;
-padding: 1rem;
-width: 100%;
-cursor: pointer;
-transition: all .8s;
-margin-bottom: 0;
-font-weight: bold;
-}
-.formulario-boton:hover{
-background-color: white;
-color: blueviolet;
-}
-.formulario-boton:disabled{
-  background-color: gray;
-  color:white
-}
-.formulario-boton:hover:disabled{
-  background-color: gray;
-  color: white;
-  cursor: default;
-  }
 
 .contacto-logos{
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 10rem;
   margin: 1rem auto;
+  border-radius: 1rem;
+  border: 1px solid blueviolet;
 }
 .contacto-logos a{
   display: flex;
@@ -104,44 +49,6 @@ color: blueviolet;
     fill: blueviolet;
   }
 
-form p{
-  margin: 0 0 1rem 0;
-  height: 1.1rem;
-  font-size: .8rem;
-  color: rgb(230, 128, 128);
-  
-}
-.contacto-modal-desactivado{
-  display: none;
-}
-.contacto-modal-contenedor{
-  display: flex;
-  position: fixed;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  background-color: rgba(0, 0, 0, 0.64);
-  justify-content: center;
-  align-items: center;
-  z-index: 3;
-}
-.contacto-modal{
-  border: .5rem solid blueviolet;
-  border-radius: 1rem ;
-  min-height: 20vh;
-  min-width: 20vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
-  background-color: #170C18 !important;
-}
-.contacto-modal-agradecimiento{
-  font-size: 1.3rem;
-  margin:  0 0 .8rem 0;
-}
 
 @media (min-width: 420px){
   .section-title{
@@ -172,20 +79,6 @@ form p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .formulario-contenedor{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-  .formulario{
-    width: 40%;
-    margin: 0;
-  }
-  .formulario-imagen{
-    display: block;
-    width: 30rem;
-    object-fit: contain;
   }
   .contacto-logos{
     margin: 3rem auto;

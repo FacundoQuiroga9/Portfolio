@@ -8,7 +8,7 @@
   "hero":{
     "job":"WEB DEVELOPER",
     "welcome":"Hello! Welcome to my portfolio. You will find all my professional information here.",
-    "button": "Download CV"
+    "button": "Resume"
   },
   "about":{
     "section":"About me",
@@ -21,7 +21,9 @@
       "html": "Html is a markup language for creating web pages. It defines a basic structure and a code (called HTML code) for the definition of the content of a web page, such as text, images, videos, games, among others.",
       "css": "CSS is a graphic design language for defining and creating the presentation of a structured document written in a markup language. It is widely used to establish the visual design of web documents, and user interfaces written in HTML.",
       "javascript": "JavScript is an interpreted programming language, a dialect of the ECMAScript standard. It is defined as object-oriented, prototype-based, imperative, weakly typed, and dynamic. It is primarily used on the client side, implemented as part of a web browser allowing for user interface enhancements and dynamic web pages.",
-      "typescript": "TypeScript is a superset of JavaScript, essentially adding static types and class-based objects.",
+      "ruby": "Ruby is an interpreted, reflective, and object-oriented programming language.",
+      "rails": "Ruby on Rails, also known as RoR or Rails, is an open-source web application framework written in the Ruby programming language, following the Model-View-Controller (MVC) pattern paradigm.",
+      "postgreSQL": "PostgreSQL, also known as Postgres, is an open-source object-relational database management system.",
       "react": "React is an open source Javascript library designed to create user interfaces with the goal of making it easy to develop single-page applications.",
       "vite": "Vite is a Frontend tool that allows you to create Javascript applications using a framework or library such as ReactJs, Vuejs, Angular, either with a specific framework or Vanillajs.",
       "sass": "Sass is a CSS metalanguage. It is a script language that is translated into CSS, SassScript is the script language itself.",
@@ -80,5 +82,5 @@
   "footer":{
     "text": "Developed with love by Facundo Quiroga"
   }
-  
+
 }
