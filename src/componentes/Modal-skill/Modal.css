@@ -15,7 +15,7 @@
   z-index: 3;
 }
 .skill-modal{
-  border: .5rem solid blueviolet;
+  border: .5rem solid rgb(158, 4, 212);
   border-radius: 1rem ;
   min-height: 20vh;
   width: 90vw;
@@ -39,7 +39,7 @@
   cursor: pointer;
 }
 .boton-container>i:hover{
-  color: blueviolet;
+  color: rgb(158, 4, 212);
 }
 
 .skill-modal>img{
@@ -68,19 +68,13 @@
   .skill-modal{
     max-width: 70vw;
   }
-  .skill-modal>img{
-    width: 5rem;
-  }
 }
 @media screen and (min-width: 1000px){
   .skill-modal-informacion{
-    font-size: 1.7rem;
-    line-height: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
   .skill-modal{
     max-width: 50vw;
-  }
-  .skill-modal>img{
-    width: 6rem;
   }
 }

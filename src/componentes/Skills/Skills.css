@@ -12,7 +12,7 @@
   font-weight: bold;
 }
 .skills-title span{
-  color: blueviolet;
+  color: rgb(158, 4, 212);
 }
 .skills-info-contenedor{
   width: 100%;
@@ -43,7 +43,7 @@
 .tool-tip{
   text-align: center;
   min-width: 3rem;
-  color: blueviolet;
+  color: rgb(158, 4, 212);
   display: inline;
   pointer-events: none;
   user-select: none;
@@ -162,19 +162,6 @@
   fill: #ededed;
 }
 
-.logo-html:hover .fondo{
-  fill: #e44d26;
-}
-.logo-html:hover .fondo2{
-  fill: #f16529;
-}
-.logo-html:hover .titulo{
-  fill: white;
-}
-.logo-html:hover .letra{
-  fill: #ededed;
-}
-
 
 @media screen and (min-width: 420px){
   .skills-title{
@@ -195,7 +182,7 @@
   }
   .tool-tip{
     min-width: 3rem;
-    color: blueviolet;
+    color: rgb(158, 4, 212);
     padding: .3rem .5rem 0 .5rem;
     font-size: .6rem;
   }
@@ -222,7 +209,7 @@
   }
   .tool-tip{
     min-width: 4rem;
-    color: blueviolet;
+    color: rgb(158, 4, 212);
     padding: .5rem .8rem 0 .8rem;
     font-size: 1rem;
   }
@@ -247,12 +234,12 @@
     margin: 1 1.5rem;
   }
   .picture-container{
-    max-width: 6rem;
+    max-width: 4rem;
     margin: 1rem .5rem;
   }
   .tool-tip{
     min-width: 4rem;
-    color: blueviolet;
+    color: rgb(158, 4, 212);
     padding: .5rem .8rem 0 .8rem;
     font-size: 1rem;
   }

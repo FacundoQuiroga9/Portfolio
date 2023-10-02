@@ -1,6 +1,6 @@
 .header{
   width: 100%;
-  background-color: blueviolet;
+  background-color: #85479b;
   color: white;
   padding: 1rem;
   display: flex;
@@ -11,6 +11,7 @@
   top: 0;
   z-index: 2;
   user-select: none;
+  box-shadow: 0 5px 15px rgb(41, 41, 41);
 }
 .header-button{
   cursor: pointer;
@@ -33,7 +34,7 @@
 }
 .header-li:hover{
   background-color: white;
-  color: blueviolet;
+  color: #85479b;
   border-radius: .3rem;
 }
 .header-li a{
@@ -73,26 +74,26 @@
     height: .5rem;
     margin: .3rem 0;
   }
-  .header-button .top-line-unclicked{ 
-    transition: ease-out .5s;    
+  .header-button .top-line-unclicked{
+    transition: ease-out .5s;
   }
-  .header-button .top-line-clicked{ 
+  .header-button .top-line-clicked{
     transform: translateY(.95rem) rotate(-45deg);
     transition: ease-out .5s;
     width: 3.5rem;
     margin: 0;
   }
-  .header-button .middle-line-unclicked{ 
+  .header-button .middle-line-unclicked{
     transition: ease-out .5s;
   }
-  .header-button .middle-line-clicked{ 
+  .header-button .middle-line-clicked{
     transform: scale(.01);
     transition: ease-out .5s;
   }
   .header-button .bottom-line-unclicked{
     transition: ease-out .5s;
   }
-  .header-button .bottom-line-clicked{ 
+  .header-button .bottom-line-clicked{
     transform: translateY(-.95rem) rotate(45deg);
     width: 3.5rem;
     transition: ease-out .5s;
@@ -122,7 +123,7 @@
   .header-li{
     margin: .5rem 0;
   }
-  
+
   .flags{
     display: flex;
     flex-direction: row;
@@ -133,7 +134,7 @@
   .flag-li{
     margin: 0 1rem;
   }
-  
+
   .flag{
     width: 2rem;
   }

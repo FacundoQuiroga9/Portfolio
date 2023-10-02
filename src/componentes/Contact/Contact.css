@@ -10,7 +10,7 @@ margin-left: 3rem;
 font-weight: bold;
 }
 .section-title span{
-  color: blueviolet;
+  color: #85479b;
 }
 span{
   font-weight: bold;
@@ -24,7 +24,7 @@ span{
   height: 10rem;
   margin: 1rem auto;
   border-radius: 1rem;
-  border: 1px solid blueviolet;
+  border: 1px solid #85479b;
 }
 .contacto-logos a{
   display: flex;
@@ -34,7 +34,7 @@ span{
   max-height: 3rem;
   margin: 0 1rem;
   border-radius: 35%;
-  background-color: blueviolet;
+  background-color: #85479b;
   padding: .5rem;
 }
 .contacto-logos a:hover{
@@ -46,7 +46,7 @@ span{
   height: 100%;
   }
   .contacto-logos a:hover path{
-    fill: blueviolet;
+    fill: #85479b;
   }
 
 

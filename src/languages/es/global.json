@@ -1,6 +1,6 @@
 {
   "navbar":{
-    "about-me": "Sobre mi",
+    "about-me": "Mi camino",
     "skills": "Habilidades",
     "projects": "Proyectos",
     "contact": "Contacto"
@@ -11,8 +11,8 @@
     "button": "Descargar CV"
   },
   "about":{
-    "section":"Sobre mi",
-    "text":"Cuando comencé a programar descubrí un mundo con un montón de posibilidades para explorar mis conocimientos y creatividad. Desde entonces, me encuentro envuelto en un aprendizaje constante permitiendo perfeccionarme como desarrollador web."
+    "section":"Mi camino",
+    "text":"Comencé mi viaje como autodidacta, inmerso en el mundo del desarrollo web, donde adquirí habilidades esenciales como HTML, CSS, JavaScript y React. Mi deseo de crecer y ampliar mis conocimientos me llevó a dar un paso significativo en mi carrera al unirme a Le Wagon, donde participé en un bootcamp de programación. Aquí, mi enfoque cambió hacia el backend, y me sumergí en el lenguaje Ruby y su poderoso framework, Ruby on Rails. Fue una experiencia enriquecedora que me permitió adquirir una comprensión profunda de la lógica detrás de las aplicaciones web y me llevó a desarrollar mi primer proyecto full-stack en grupo con otros compañeros, una culminación de mis habilidades de frontend y backend. Mi visión futura es integrar estos dos mundos del desarrollo web, aprovechando lo mejor de ambos para crear soluciones innovadoras y completas. Me motiva la idea de crear aplicaciones que no solo sean visualmente atractivas, sino también sólidas en su arquitectura y funcionalidad. En cada paso de este viaje, he abrazado el desafío de aprender y crecer en el campo de la programación."
   },
   "skills":{
     "section":"Habilidades",

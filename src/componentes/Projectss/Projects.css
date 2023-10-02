@@ -1,6 +1,6 @@
 #projects{
   scroll-margin-top: 10rem;
-  
+
 }
 .section-projects{
   text-align: end;
@@ -11,7 +11,7 @@
   font-weight: bold;
 }
 .section-projects span{
-  color: blueviolet;
+  color: rgb(158, 4, 212);
 }
 
 .projects-contenedor{
@@ -45,8 +45,3 @@
     font-size: 3rem;
   }
 }
-
-
-
-
-

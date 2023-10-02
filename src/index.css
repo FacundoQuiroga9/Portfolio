@@ -1,5 +1,5 @@
 /*
-    
+
   Con este reset vamos a resolver:
     👉 Unificar el uso de Custom Properties
     👉 Problemas de box-model más generales
@@ -13,12 +13,13 @@
 /* Aquí definimos las Custom properties */
 :root{
   --negro         : #393939;
-  
+  --violeta         : rgb(158, 4, 212);
+
   /* Tipografía */
   --tipo-principal   : Helvetica, Arial, sans-serif;
   --tipo-secundaria  : Verdana;
 }
-  
+
 /* Las adaptamos al modo oscuro */
 @media (prefers-color-scheme: dark) {
   :root{
@@ -58,7 +59,7 @@ img , picture , video , iframe , figure{
   max-width: 100%;
   width: 100%;
   display: block;
-  /* opcional */ object-fit: cover;        
+  /* opcional */ object-fit: cover;
   /* opcional */ object-position: center center;
 }
 
@@ -145,4 +146,3 @@ body {
   /* opcional */ -webkit-font-smoothing: antialiased;
   /* opcional */ -moz-osx-font-smoothing: grayscale;
 }
-

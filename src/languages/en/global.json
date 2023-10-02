@@ -1,6 +1,6 @@
 {
   "navbar":{
-    "about-me": "About me",
+    "about-me": "My Journey",
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact"
@@ -11,8 +11,8 @@
     "button": "Resume"
   },
   "about":{
-    "section":"About me",
-    "text":"When I started programming I discovered a world with a lot of possibilities to explore my knowledge and creativity. Since then, I have been involved in constant learning, allowing me to improve myself as a web developer."
+    "section":"My journey",
+    "text":"I began my journey as a self-learner, immersed in the world of web development, where I acquired essential skills such as HTML, CSS, JavaScript, and React. My desire to grow and expand my knowledge led me to take a significant step in my career by joining Le Wagon, where I participated in a programming bootcamp. Here, my focus shifted towards the backend, and I immersed myself in the Ruby language and its powerful framework, Ruby on Rails. It was an enriching experience that allowed me to gain a deep understanding of the logic behind web applications and led me to develop my first full-stack project in a group with other peers, a culmination of my frontend and backend skills. My future vision is to integrate these two worlds of web development, leveraging the best of both to create innovative and comprehensive solutions. I am motivated by the idea of creating applications that are not only visually appealing but also robust in their architecture and functionality. At every step of this journey, I have embraced the challenge of learning and growing in the field of programming."
   },
   "skills":{
     "section":"Skills",
@@ -44,8 +44,8 @@
   "projects":{
     "section": "Projects",
     "card1":{
-      "title": "Music player",
-      "techs": "HTML, CSS and Javascript"
+      "title": "Ffarm Taid",
+      "techs": "HTML, CSS y React"
     },
     "card2":{
       "title": "Media player",
@@ -60,8 +60,8 @@
       "techs": "HTML, CSS, Javascript and React"
     },
     "card5":{
-      "title": "Lyrics search",
-      "techs": "HTML, CSS and Javascript"
+      "title": "Fixi",
+      "techs": "HTML, CSS y Ruby on Rails"
     }
   },
   "contact":{

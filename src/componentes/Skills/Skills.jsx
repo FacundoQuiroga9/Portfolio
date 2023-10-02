@@ -1,7 +1,5 @@
 import './Skills.css'
 import Modal from '../Modal-skill/Modal'
-import html from '../../imagenes/html.png'
-import css from '../../imagenes/css.png'
 import javascript from '../../imagenes/javascript.png'
 import react from '../../imagenes/react.png'
 import vite from '../../imagenes/vite.png'
@@ -14,6 +12,7 @@ import wordpress from '../../imagenes/wordpress.png'
 import figma from '../../imagenes/figma.png'
 import illustrator from '../../imagenes/illustrator.png'
 import photoshop from '../../imagenes/photoshop.png'
+import Htmllogo from '../SVGs/Html/Html'
 import Rubylogo from '../SVGs/Ruby/Ruby'
 import Railslogo from '../SVGs/Rails/Rails'
 import Postgresqllogo from '../SVGs/PostgreSQL/Postgresql'
@@ -47,42 +46,19 @@ const Skills = ()=>{
         <div className="skills-info-contenido-contenedor">
           <h4 className="skills-info-contenido-subtitulo">{t("skills.development.title")}</h4>
           <div className="skills-info-contenido-logos">
-            <picture className='picture-container'>
-              <svg onClick={()=> setModalHtml(!modalHtml)} className='logo-html' id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.9 95.37"><polygon className='fondo' points="6.5 87.37 0 15.07 70.9 15.07 64.4 87.37 35.4 95.37 6.5 87.37" fill="blueviolet"/><polygon className='fondo2' points="35.4 20.25 35.4 90.17 35.46 90.19 59.52 83.72 65.08 20.25 35.4 20.25" fill="blueviolet"/><polygon className='letra' points="35.4 47.77 23.7 47.77 22.9 38.67 35.4 38.67 35.4 29.77 35.4 29.77 13.2 29.77 13.4 32.17 15.6 56.67 35.4 56.67 35.4 47.77" fill="#170c18"/><polygon className='letra' points="35.4 70.77 35.4 70.77 25.5 68.17 24.9 61.07 20.1 61.07 16 61.07 17.2 74.97 35.4 80.07 35.4 79.97 35.4 70.77" fill="#170c18"/><polygon className='letra' points="35.4 47.77 35.4 56.67 46.3 56.67 45.3 68.17 35.4 70.77 35.4 80.07 53.6 74.97 53.7 73.47 55.8 50.17 56 47.77 53.6 47.77 35.4 47.77" fill="#170c18"/><polygon className='letra' points="35.4 29.77 35.4 35.27 35.4 38.67 35.4 38.67 56.8 38.67 56.8 38.67 56.8 38.67 57 36.67 57.4 32.17 57.6 29.77 35.4 29.77" fill="#170c18"/><path className='titulo' d="M21.75,4.63h4.5v4.5h4.1V4.63h4.5v13.5h-4.5v-4.5h-4.1v4.5h-4.5V4.63Z" transform="translate(-15.2 -4.63)" fill="blueviolet"/><path className='titulo' d="M40.85,9.13h-4V4.63h12.4v4.5h-4v9h-4.5l.1-9Z" transform="translate(-15.2 -4.63)" fill="blueviolet"/><path className='titulo' d="M51.25,4.63H56l2.9,4.7,2.9-4.7h4.7v13.5H62v-6.7l-3.1,4.8h-.1l-3.1-4.8v6.7h-4.4V4.63Z" transform="translate(-15.2 -4.63)" fill="blueviolet"/><path className='titulo' d="M68.75,4.63h4.5v9h6.3v4.5H68.75Z" transform="translate(-15.2 -4.63)" fill="blueviolet"/></svg>
-              <div className='tool-tip' role='tooltip'>HTML</div>
-            </picture>
-            <Modal estado={modalHtml} cambiarEstado={setModalHtml} imagen={`${html}`} descripcion={t("skills.development.html")}/>
-
-            <picture className='picture-container'>
-            <svg onClick={()=> setModalCss(!modalCss)} className='logo-css' id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.4 100"><path className='fondo' d="M50.3,100,19.5,91.5l-6.9-77H88l-6.9,77L50.3,100Z" transform="translate(-12.6 0)" fill="blueviolet"/><polygon className='fondo2' points="37.72 18.34 37.72 96.12 37.79 96.14 64.55 88.94 70.73 18.34 37.72 18.34" fill="blueviolet"/><path className='centro' d="M29,49.7l.8,8.4H48.6V49.7Zm-1.6-17,.8,8.4H48.5V32.7ZM48.5,71.6h0l-9.4-2.5-.6-6.7H30l1.2,13.2,17.2,4.8h0l.1-8.8Z" transform="translate(-12.6 0)" fill="#170c18"/><path className='titulo' d="M30.7,0H40.9V4.3H35V8.6h5.9v4.3H30.7ZM43,0H53.2V3.7H47.3v.7h5.9V13H43V9.1h5.9V8.3H43V0ZM55.2,0H65.4V3.7H59.5v.7h5.9V13H55.2V9.1h5.9V8.3H55.2V0Z" transform="translate(-12.6 0)" fill="blueviolet"/><path className='centro' d="M68.1,49.7l1.5-17H48.5v8.4H60.4l-.8,8.6H48.5v8.4H58.9L57.9,69l-9.4,2.5v8.8l17.3-4.8.1-1.4,2-22.2.2-2.2Z" transform="translate(-12.6 0)" fill="#170c18"/></svg>
-            <div className='tool-tip' role='tooltip'>CSS</div>
-            </picture>
-            <Modal estado={modalCss} cambiarEstado={setModalCss} imagen={`${css}`} descripcion={t("skills.development.css")}/>
 
 
-            <picture className='picture-container'>
-            <svg onClick={()=> setModalJs(!modalJs)} className='logo-js' id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path className='fondo' d="M0,0H256V256H0Z" transform="translate(0 0)" fill="blueviolet"/><path className='letra' d="M67.31,213.93,86.9,202.08c3.78,6.7,7.22,12.37,15.47,12.37,7.9,0,12.89-3.1,12.89-15.12v-81.8h24v82.14c0,24.91-14.6,36.26-35.91,36.26-19.25,0-30.42-10-36.09-22" transform="translate(0 0)" fill="#170c18"/><path className='letra' d="M152.38,211.35,172,200c5.16,8.42,11.86,14.61,23.71,14.61,10,0,16.33-5,16.33-11.86,0-8.25-6.53-11.17-17.53-16l-6-2.58c-17.36-7.39-28.87-16.66-28.87-36.26,0-18,13.74-31.79,35.23-31.79,15.29,0,26.29,5.33,34.19,19.25l-18.73,12c-4.12-7.39-8.59-10.31-15.46-10.31-7.05,0-11.52,4.47-11.52,10.31,0,7.22,4.47,10.14,14.78,14.61l6,2.57c20.45,8.77,32,17.7,32,37.81,0,21.65-17,33.51-39.87,33.51-22.34,0-36.77-10.66-43.82-24.58" transform="translate(0 0)" fill="#170c18"/></svg>
-            <div className='tool-tip' role='tooltip'>Javascript</div>
-            </picture>
-            <Modal estado={modalJs} cambiarEstado={setModalJs} imagen={`${javascript}`} descripcion={t("skills.development.javascript")}/>
 
+            <Htmllogo onClick={()=> setModalHtml(!modalHtml)} />
+            <Modal estado={modalHtml} cambiarEstado={setModalHtml} imagen={<Htmllogo size="modal-svg"/>} descripcion={t("skills.development.html")}/>
 
-            <picture className='picture-container'>
             <Rubylogo onClick={()=> setModalRuby(!modalRuby)} />
-            <div className='tool-tip' role='tooltip'>Ruby</div>
-            </picture>
             <Modal estado={modalRuby} cambiarEstado={setModalRuby} imagen={<Rubylogo size="modal-svg"/>} descripcion={t("skills.development.ruby")}/>
 
-            <picture className='picture-container'>
             <Railslogo alto="1rem" ancho="1rem" onClick={()=> setModalRails(!modalRails)} />
-            <div className='tool-tip' role='tooltip'>Ruby on rails</div>
-            </picture>
             <Modal estado={modalRails} cambiarEstado={setModalRails} imagen={<Railslogo size="modal-svg" />} descripcion={t("skills.development.rails")}/>
 
-            <picture className='picture-container'>
             <Postgresqllogo onClick={()=> setModalPostgresql(!modalPostgresql)} />
-            <div className='tool-tip' role='tooltip'>PostgreSQL</div>
-            </picture>
             <Modal estado={modalPostgresql} cambiarEstado={setModalPostgresql} imagen={<Postgresqllogo type="modal-svg" />} descripcion={t("skills.development.postgreSQL")}/>
 
 
