@@ -9,9 +9,6 @@ font-size: 2rem;
 margin-left: 3rem;
 font-weight: bold;
 }
-.section-title span{
-  color: blueviolet;
-}
 .formulario-imagen{
   display: none;
 }
@@ -52,7 +49,7 @@ span{
 
 .formulario-boton{
 border: none;
-background-color: blueviolet;
+background-color: #85479b;
 color: white;
 border-radius: 20px;
 padding: 1rem;
@@ -64,7 +61,7 @@ font-weight: bold;
 }
 .formulario-boton:hover{
 background-color: white;
-color: blueviolet;
+color: #85479b;
 }
 .formulario-boton:disabled{
   background-color: gray;
@@ -86,7 +83,7 @@ color: blueviolet;
   max-height: 3rem;
   margin: 0 1rem;
   border-radius: 35%;
-  background-color: blueviolet;
+  background-color: #85479b;
   padding: .5rem;
 }
 
@@ -101,7 +98,7 @@ color: blueviolet;
   width: 100%;
   }
   .contacto-logos a:hover path{
-    fill: blueviolet;
+    fill: #85479b;
   }
 
 form p{
@@ -181,15 +178,37 @@ form p{
     display: flex;
     justify-content: space-around;
     width: 100%;
+    align-items: center;
   }
   .formulario{
     width: 40%;
     margin: 0;
   }
+  .contenedor-fondo-imagen{
+    height: 50%;
+    background-color: #59256c;
+    border-radius: 1rem;
+  }
+  .contenedor-imagen-contacto{
+    height: 50%;
+    background-color: #85479b;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 15deg;
+    box-shadow: 5px 5px 15px black;
+    transition: all .5s;
+    border: 8px solid white;
+  }
+  .contenedor-imagen-contacto:hover{
+    rotate: 0deg;
+  }
   .formulario-imagen{
     display: block;
-    width: 30rem;
+    width: 20rem;
     object-fit: contain;
+    border-radius: 1rem;
   }
   .contacto-logos{
     margin: 3rem auto;

@@ -1,6 +1,5 @@
 import './Contact.css'
-import imagenContacto from "../../imagenes/DSC_09822lista.png"
-import Github from '../SVGs/Github/Github'
+import imagenContacto from "../../imagenes/DSC_09822.png"
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 
@@ -30,7 +29,12 @@ const Contact = ()=>{
     <h3 className="section-title">Co<span>n</span>tact</h3>
     <div className='contacto-contenedor'>
       <div className="formulario-contenedor">
-      <img src={imagenContacto} alt="Foto de Facundo Quiroga" className='formulario-imagen'/>
+        <div className="contenedor-fondo-imagen">
+          <div className='contenedor-imagen-contacto'>
+            <img src={imagenContacto} alt="Foto de Facundo Quiroga" className='formulario-imagen'/>
+          </div>
+        </div>
+
       <form action='' className='formulario' id='formulario'
           onSubmit={e=>{
             e.preventDefault();
