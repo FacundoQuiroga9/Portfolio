@@ -1,0 +1,53 @@
+.left-half{
+  fill: #85479b;
+}
+.html-logo:hover > .left-half{
+  fill: #E44D26;
+}
+.modal-svg > .left-half{
+  fill: #E44D26;
+  cursor: default;
+}
+.right-half{
+  fill: #85479b;
+}
+.html-logo:hover > .right-half{
+  fill: #F16529;
+}
+.modal-svg > .right-half{
+  fill: #F16529;
+  cursor: default;
+}
+
+.left-number{
+  fill: #170C18;
+}
+.html-logo:hover > .left-number{
+  fill: white;
+}
+.modal-svg > .left-number{
+  fill: white;
+  cursor: default;
+}
+
+.right-number{
+  fill: #170C18;
+}
+.html-logo:hover > .right-number{
+  fill: white;
+}
+.modal-svg > .right-number{
+  fill: white;
+  cursor: default;
+}
+
+.html-title{
+  fill: #85479b;
+}
+.html-logo:hover > .html-title{
+  fill: white;
+}
+.modal-svg > .html-title{
+  fill: white;
+  cursor: default;
+}

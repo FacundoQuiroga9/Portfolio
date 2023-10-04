@@ -1,0 +1,35 @@
+.top-half{
+  fill: #85479b;
+  }
+  .wordpress-logo:hover > .top-half{
+    fill: #00749A;
+  }
+
+  .modal-svg > .top-half{
+  fill: #00749A;
+  cursor: default;
+  }
+
+  .bottom-half{
+    fill: #85479b;
+    }
+  .wordpress-logo:hover > .bottom-half{
+      fill: #00749A;
+    }
+
+    .modal-svg > .bottom-half{
+    fill: #00749A;
+    cursor: default;
+    }
+
+    .ring-around{
+      fill: #85479b;
+      }
+      .wordpress-logo:hover > .ring-around{
+        fill: #00749A;
+      }
+
+      .modal-svg > .ring-around{
+      fill: #00749A;
+      cursor: default;
+      }

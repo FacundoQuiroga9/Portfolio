@@ -1,0 +1,11 @@
+.github-fondo{
+  fill: #85479b;
+  }
+  .github-logo:hover > .github-fondo{
+    fill:white;
+  }
+
+  .modal-svg > .github-fondo{
+  fill: white;
+  cursor: default;
+  }

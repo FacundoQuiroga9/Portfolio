@@ -2,7 +2,7 @@ import './Postgresql.css'
 
 const Postgresql = (props) => (
   <svg
-    className={`postgresql-logo ${props.type}`}
+    className={`postgresql-logo ${props.size}`}
     x={0}
     y={0}
     viewBox="0 0 2424 2500"

@@ -1,0 +1,11 @@
+.sass-letras{
+fill: #85479b;
+}
+.sass-logo:hover > .sass-letras{
+  fill: #CD6799;
+}
+
+.modal-svg > .sass-letras{
+fill: #CD6799;
+cursor: default;
+}

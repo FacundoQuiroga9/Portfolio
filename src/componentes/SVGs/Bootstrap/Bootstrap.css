@@ -1,0 +1,11 @@
+.bootstrap-fondo{
+  fill: #85479b;
+  }
+  .bootstrap-logo:hover > .bootstrap-fondo{
+    fill: #7952B3;
+  }
+
+  .modal-svg > .bootstrap-fondo{
+  fill: #7952B3;
+  cursor: default;
+  }

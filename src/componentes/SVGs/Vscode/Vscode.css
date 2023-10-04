@@ -1,0 +1,43 @@
+.first-line{
+fill: #85479b;
+}
+.Vscode-logo:hover > .first-line{
+fill: #3C99D4;
+}
+.modal-svg > .first-line{
+  fill: #3C99D4;
+  cursor: default;
+}
+
+.second-line{
+fill: #783c8e;
+}
+.Vscode-logo:hover > .second-line{
+fill: #2489CA;
+}
+.modal-svg > .second-line{
+fill: #2489CA;
+cursor: default;
+}
+
+.third-line{
+fill: #69307e;
+}
+.Vscode-logo:hover > .third-line{
+fill: #0877B9;
+}
+.modal-svg > .third-line{
+fill: #0877B9;
+cursor: default;
+}
+
+.last-line{
+fill: rgb(116, 57, 137);
+}
+.Vscode-logo:hover > .last-line{
+fill: #0877B9;
+}
+.modal-svg > .last-line{
+fill: #0877B9;
+cursor: default;
+}

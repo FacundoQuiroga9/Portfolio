@@ -1,10 +1,43 @@
-.st0{
-  fill:#85479b
+.rails-borde{
+fill: #69307e;
+}
+.rails-logo:hover > .rails-borde{
+fill: #80152A;
+}
+.modal-svg > .rails-borde{
+fill: #80152A;
+cursor: default;
 }
 
-.rails-logo:hover .st0{
-  fill:#c00
+.rails-fondo{
+  fill: #85479b;
 }
-.modal-svg > .st0{
-  fill:#c00
+.rails-logo:hover > .rails-fondo{
+  fill: #A51631;
 }
+.modal-svg > .rails-fondo{
+  fill: #A51631;
+  cursor: default;
+}
+
+.rails-camino{
+  fill: #170C18;
+}
+.rails-logo:hover > .rails-camino{
+  fill: #F7DEE1;
+}
+.modal-svg > .rails-camino{
+  fill: #F7DEE1;
+  cursor: default;
+}
+
+.rails-title{
+  fill: #170C18;
+}
+.rails-logo:hover > .rails-title{
+fill: white;
+}
+.modal-svg > .rails-title{
+  fill: white;
+  cursor: default;
+  }

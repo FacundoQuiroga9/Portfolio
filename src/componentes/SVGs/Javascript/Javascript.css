@@ -1,0 +1,17 @@
+.cuadrado-amarillo{
+fill: #85479b;
+}
+
+.javascript-logo:hover .cuadrado-amarillo{
+fill: #F7DF1E;
+}
+.js{
+  fill: #170C18;
+}
+.modal-svg > .cuadrado-amarillo{
+  fill: #F7DF1E;
+  cursor: default;
+}
+.modal-svg > .js{
+  cursor: default;
+}

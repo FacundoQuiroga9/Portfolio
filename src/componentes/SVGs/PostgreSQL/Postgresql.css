@@ -26,14 +26,18 @@
 }
 .modal-svg .path3{
   fill: white;
+  cursor: default;
 }
 .modal-svg .path1{
   fill: black;
+  cursor: default;
 }
 
 .modal-svg .path4{
   fill: white;
+  cursor: default;
 }
 .modal-svg .path2{
   fill: #336791;
+  cursor: default;
 }

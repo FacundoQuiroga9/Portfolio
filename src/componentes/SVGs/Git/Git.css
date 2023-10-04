@@ -1,0 +1,11 @@
+.git-fondo{
+  fill: #85479b;
+  }
+  .git-logo:hover > .git-fondo{
+    fill: #DE4C36;
+  }
+
+  .modal-svg > .git-fondo{
+  fill: #DE4C36;
+  cursor: default;
+  }

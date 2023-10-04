@@ -1,0 +1,24 @@
+.atom-lines{
+  fill: #85479b;
+}
+.react-logo:hover > .atom-lines{
+  fill: #70CFF0;
+}
+
+.modal-svg > .atom-lines {
+  fill: #70CFF0;
+  cursor: default;
+}
+
+.atom-center{
+  fill: #85479b;
+}
+.react-logo:hover > .atom-center{
+  fill: #70CFF0;
+}
+
+.modal-svg > .atom-center {
+  fill: #70CFF0;
+  cursor: default;
+}
+

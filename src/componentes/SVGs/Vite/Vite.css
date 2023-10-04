@@ -1,0 +1,23 @@
+.vite-rayo{
+  fill: #bb7ad3;
+}
+.vite-logo:hover > .vite-rayo{
+fill: #F9D643;
+}
+
+.modal-svg > .vite-rayo{
+fill: #F9D643;
+cursor: default;
+}
+
+.vite-fondo{
+fill: #85479b;
+}
+.vite-logo:hover > .vite-fondo{
+fill: #835EDB;
+}
+
+.modal-svg > .vite-fondo{
+fill: #835EDB;
+cursor: default;
+}

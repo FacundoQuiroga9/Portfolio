@@ -1,0 +1,54 @@
+.left-mitad{
+  fill: #85479b;
+}
+.css-logo:hover > .left-mitad{
+  fill: #2062AF;
+}
+.modal-svg .left-mitad{
+  fill: #2062AF;
+  cursor: default;
+}
+
+.right-mitad{
+  fill: #85479b;
+}
+.css-logo:hover > .right-mitad{
+  fill: #3C9CD7;
+}
+.modal-svg .right-mitad{
+  fill: #3C9CD7;
+  cursor: default;
+}
+
+.whole-number{
+  fill: #170C18;
+}
+.css-logo:hover > .whole-number{
+  fill: white;
+}
+.modal-svg .whole-number{
+  fill: white;
+  cursor: default;
+}
+
+.piece-number{
+  fill: #170C18;
+}
+.css-logo:hover > .piece-number{
+  fill: white;
+}
+.modal-svg .piece-number{
+  fill: white;
+  cursor: default;
+}
+
+.css-title{
+  fill: #85479b;
+}
+.css-logo:hover > .css-title{
+  fill: white;
+}
+.modal-svg .css-title{
+  fill: white;
+  cursor: default;
+}
