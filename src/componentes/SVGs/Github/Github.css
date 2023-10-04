@@ -1,5 +1,6 @@
 .github-fondo{
   fill: #85479b;
+  transition: all .5s
   }
   .github-logo:hover > .github-fondo{
     fill:white;

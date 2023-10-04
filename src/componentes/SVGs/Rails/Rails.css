@@ -1,5 +1,6 @@
 .rails-borde{
 fill: #69307e;
+transition: all .5s
 }
 .rails-logo:hover > .rails-borde{
 fill: #80152A;
@@ -11,6 +12,7 @@ cursor: default;
 
 .rails-fondo{
   fill: #85479b;
+  transition: all .5s
 }
 .rails-logo:hover > .rails-fondo{
   fill: #A51631;
@@ -22,6 +24,7 @@ cursor: default;
 
 .rails-camino{
   fill: #170C18;
+  transition: all .5s
 }
 .rails-logo:hover > .rails-camino{
   fill: #F7DEE1;
@@ -33,6 +36,7 @@ cursor: default;
 
 .rails-title{
   fill: #170C18;
+  transition: all .5s
 }
 .rails-logo:hover > .rails-title{
 fill: white;

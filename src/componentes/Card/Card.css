@@ -3,13 +3,13 @@
   display: flex;
   width: 90vw;
   height: 10rem;
-  box-shadow: 0 0 5px 2.5px #85479b;
+  box-shadow: 0 0 5px 2.5px blueviolet;
   border-radius: 6px;
   transition: all 0.25s;
   margin: 3rem 0;
 }
 .card-contenedor:hover{
-  box-shadow: 0 0 10px 5px #85479b;
+  box-shadow: 0 0 10px 5px blueviolet;
   transform: translateY(-1rem);
 }
 

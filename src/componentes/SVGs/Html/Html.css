@@ -1,5 +1,6 @@
 .left-half{
   fill: #85479b;
+  transition: all .5s
 }
 .html-logo:hover > .left-half{
   fill: #E44D26;
@@ -10,6 +11,7 @@
 }
 .right-half{
   fill: #85479b;
+  transition: all .5s
 }
 .html-logo:hover > .right-half{
   fill: #F16529;
@@ -21,6 +23,7 @@
 
 .left-number{
   fill: #170C18;
+  transition: all .5s
 }
 .html-logo:hover > .left-number{
   fill: white;
@@ -32,6 +35,7 @@
 
 .right-number{
   fill: #170C18;
+  transition: all .5s
 }
 .html-logo:hover > .right-number{
   fill: white;
@@ -43,6 +47,7 @@
 
 .html-title{
   fill: #85479b;
+  transition: all .5s
 }
 .html-logo:hover > .html-title{
   fill: white;

@@ -1,0 +1,25 @@
+.ps-fondo{
+  fill: #85479b;
+  transition: all .5s
+  }
+  .photoshop-logo:hover > .ps-fondo{
+    fill: #001E36;
+  }
+
+  .modal-svg > .ps-fondo{
+  fill: #001E36;
+  cursor: default;
+  }
+
+  .ps-letras{
+    fill: #170C18;
+    transition: all .5s
+    }
+    .photoshop-logo:hover > .ps-letras{
+      fill: #31A8FF;
+    }
+
+    .modal-svg > .ps-letras{
+    fill: #31A8FF;
+    cursor: default;
+    }

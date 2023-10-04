@@ -1,5 +1,6 @@
 .git-fondo{
   fill: #85479b;
+  transition: all .5s
   }
   .git-logo:hover > .git-fondo{
     fill: #DE4C36;

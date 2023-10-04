@@ -1,5 +1,6 @@
 .sass-letras{
 fill: #85479b;
+transition: all .5s
 }
 .sass-logo:hover > .sass-letras{
   fill: #CD6799;

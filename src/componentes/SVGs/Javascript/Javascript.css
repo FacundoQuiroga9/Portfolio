@@ -1,5 +1,6 @@
 .cuadrado-amarillo{
 fill: #85479b;
+transition: all .5s
 }
 
 .javascript-logo:hover .cuadrado-amarillo{
@@ -7,6 +8,7 @@ fill: #F7DF1E;
 }
 .js{
   fill: #170C18;
+  transition: all .5s
 }
 .modal-svg > .cuadrado-amarillo{
   fill: #F7DF1E;

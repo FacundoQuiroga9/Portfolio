@@ -1,5 +1,6 @@
 .left-mitad{
   fill: #85479b;
+  transition: all .5s
 }
 .css-logo:hover > .left-mitad{
   fill: #2062AF;
@@ -11,6 +12,7 @@
 
 .right-mitad{
   fill: #85479b;
+  transition: all .5s
 }
 .css-logo:hover > .right-mitad{
   fill: #3C9CD7;
@@ -22,6 +24,7 @@
 
 .whole-number{
   fill: #170C18;
+  transition: all .5s
 }
 .css-logo:hover > .whole-number{
   fill: white;
@@ -33,6 +36,7 @@
 
 .piece-number{
   fill: #170C18;
+  transition: all .5s
 }
 .css-logo:hover > .piece-number{
   fill: white;
@@ -44,6 +48,7 @@
 
 .css-title{
   fill: #85479b;
+  transition: all .5s
 }
 .css-logo:hover > .css-title{
   fill: white;

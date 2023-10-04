@@ -1,5 +1,6 @@
 .bootstrap-fondo{
   fill: #85479b;
+  transition: all .5s
   }
   .bootstrap-logo:hover > .bootstrap-fondo{
     fill: #7952B3;

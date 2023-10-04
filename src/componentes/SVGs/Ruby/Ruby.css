@@ -1,5 +1,6 @@
 .ruby-pieces{
   fill: #85479b;
+  transition: all .5s
 }
 .ruby-logo:hover > .ruby-pieces{
   fill: #D91404;

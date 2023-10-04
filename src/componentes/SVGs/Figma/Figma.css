@@ -1,0 +1,59 @@
+.first-ball{
+fill: #85479b;
+transition: all .5s
+}
+.figma-logo:hover > .first-ball{
+  fill:#F24E1E
+}
+.modal-svg > .first-ball{
+  fill:#F24E1E;
+  cursor: default;
+}
+
+.second-ball{
+fill: #85479b;
+transition: all .5s
+}
+.figma-logo:hover > .second-ball{
+  fill:#FF7262
+}
+.modal-svg > .second-ball{
+  fill:#FF7262;
+  cursor: default;
+}
+
+.third-ball{
+fill: #85479b;
+transition: all .5s
+}
+.figma-logo:hover > .third-ball{
+fill: #A259FF;
+}
+.modal-svg > .third-ball{
+  fill: #A259FF;
+  cursor: default;
+}
+
+.fourth-ball{
+fill: #85479b;
+transition: all .5s
+}
+.figma-logo:hover > .fourth-ball{
+  fill:#1ABCFE
+}
+.modal-svg > .fourth-ball{
+  fill:#1ABCFE;
+  cursor: default;
+}
+
+.last-ball{
+fill: #85479b;
+transition: all .5s
+}
+.figma-logo:hover > .last-ball{
+  fill:#0ACF83
+}
+.modal-svg > .last-ball{
+  fill:#0ACF83;
+  cursor: default;
+}

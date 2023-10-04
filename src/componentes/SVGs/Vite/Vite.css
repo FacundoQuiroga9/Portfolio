@@ -1,5 +1,6 @@
 .vite-rayo{
   fill: #bb7ad3;
+  transition: all .5s
 }
 .vite-logo:hover > .vite-rayo{
 fill: #F9D643;
@@ -12,6 +13,7 @@ cursor: default;
 
 .vite-fondo{
 fill: #85479b;
+transition: all .5s
 }
 .vite-logo:hover > .vite-fondo{
 fill: #835EDB;

@@ -1,5 +1,6 @@
 .top-half{
   fill: #85479b;
+  transition: all .5s
   }
   .wordpress-logo:hover > .top-half{
     fill: #00749A;
@@ -12,6 +13,7 @@
 
   .bottom-half{
     fill: #85479b;
+    transition: all .5s
     }
   .wordpress-logo:hover > .bottom-half{
       fill: #00749A;
@@ -24,6 +26,7 @@
 
     .ring-around{
       fill: #85479b;
+      transition: all .5s
       }
       .wordpress-logo:hover > .ring-around{
         fill: #00749A;

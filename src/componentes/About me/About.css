@@ -15,8 +15,8 @@ padding: 0 1.8rem;
   color: rgb(158, 4, 212);
 }
 .aboutMe-info-texto{
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
 }
 .aboutMe-foto-contenedor{
   display: none;
@@ -28,8 +28,8 @@ padding: 0 1.8rem;
     line-height: 3rem;
   }
   .aboutMe-info-texto{
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -39,8 +39,8 @@ padding: 0 1.8rem;
     line-height: 3.5rem;
   }
   .aboutMe-info-texto{
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
   }
 }
 

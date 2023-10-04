@@ -1,15 +1,19 @@
 .path1{
   fill: #85479b;
+  transition: all .5s
 }
 .path2{
   fill: #85479b;
+  transition: all .5s
 }
 .path3{
   fill: #170C18;
+  transition: all .5s
 }
 
 .path4{
   fill: #170C18;
+  transition: all .5s
 }
 
 .postgresql-logo:hover .path3{

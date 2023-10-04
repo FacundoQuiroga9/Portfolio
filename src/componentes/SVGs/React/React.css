@@ -1,5 +1,6 @@
 .atom-lines{
   fill: #85479b;
+  transition: all .5s
 }
 .react-logo:hover > .atom-lines{
   fill: #70CFF0;
@@ -12,6 +13,7 @@
 
 .atom-center{
   fill: #85479b;
+  transition: all .5s
 }
 .react-logo:hover > .atom-center{
   fill: #70CFF0;
@@ -21,4 +23,3 @@
   fill: #70CFF0;
   cursor: default;
 }
-

@@ -1,0 +1,25 @@
+.illus-fondo{
+  fill: #85479b;
+  transition: all .5s
+  }
+  .illustrator-logo:hover > .illus-fondo{
+    fill: #300;
+  }
+
+  .modal-svg > .illus-fondo{
+  fill: #300;
+  cursor: default;
+  }
+
+  .illus-letras{
+    fill: #170C18;
+    transition: all .5s
+    }
+    .illustrator-logo:hover > .illus-letras{
+      fill: #FF9A00;
+    }
+
+    .modal-svg > .illus-letras{
+    fill: #FF9A00;
+    cursor: default;
+    }

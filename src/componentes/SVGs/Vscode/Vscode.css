@@ -1,5 +1,6 @@
 .first-line{
 fill: #85479b;
+transition: all .5s
 }
 .Vscode-logo:hover > .first-line{
 fill: #3C99D4;
@@ -11,6 +12,7 @@ fill: #3C99D4;
 
 .second-line{
 fill: #783c8e;
+transition: all .5s
 }
 .Vscode-logo:hover > .second-line{
 fill: #2489CA;
@@ -22,6 +24,7 @@ cursor: default;
 
 .third-line{
 fill: #69307e;
+transition: all .5s
 }
 .Vscode-logo:hover > .third-line{
 fill: #0877B9;
@@ -33,6 +36,7 @@ cursor: default;
 
 .last-line{
 fill: rgb(116, 57, 137);
+transition: all .5s
 }
 .Vscode-logo:hover > .last-line{
 fill: #0877B9;
