@@ -2,16 +2,18 @@ import './Contact.css'
 import imagenContacto from "../../imagenes/DSC_09822.png"
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
+import {useTranslation} from 'react-i18next'
 
 const Contact = ()=>{
+  const [t, i18n]= useTranslation("global")
   const validarFormulario = (nombre, email,mensaje)=>{
     const regex = new RegExp(/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/)
     if(!(nombre.trim().length > 3)){
-      return'Tu nombre es demasiado corto'
+      return'name'
     }if(!(regex.test(email))){
-      return "Tu E-mail es inválido"
+      return "e-mail"
     }if(mensaje.length< 50){
-     return "Tu mensaje es demasiado corto"
+     return "message"
     }
   }
   const [nombre, setNombre]= useState('')
@@ -20,13 +22,15 @@ const Contact = ()=>{
   const error = validarFormulario(nombre, email,mensaje)
   const modal = document.querySelector('.desactivado')
 
+
+
   const ocultarModal =()=>{
     modal.classList.remove('contacto-modal-contenedor')
   }
 
   return(
     <div id='contacts'>
-    <h3 className="section-title">Co<span>n</span>tact</h3>
+    <h3 className="section-title">{t("contact.section")}</h3>
     <div className='contacto-contenedor'>
       <div className="formulario-contenedor">
 
@@ -44,14 +48,14 @@ const Contact = ()=>{
             setMensaje('')
             }
             }}>
-        <label htmlFor='nombre'>NOMBRE <span>*</span></label>
+        <label htmlFor='nombre'>{t("contact.name")} <span>*</span></label>
         <input  name="nombre" type="text" className="formulario-nombre" value={nombre} onChange={e =>setNombre(e.target.value)} required/>
-        <label htmlFor='mail'>E-MAIL <span>*</span></label>
-        <input placeholder='ejemplo@ejemplo.com' name="mail" type="text" className="formulario-mail" onChange={e =>setEmail(e.target.value)} value={email} required/>
-        <label htmlFor='mensaje'>MENSAJE <span>*</span></label>
+        <label htmlFor='mail'>{t("contact.e-mail")} <span>*</span></label>
+        <input placeholder={t("contact.placeholder")}  name="mail" type="text" className="formulario-mail" onChange={e =>setEmail(e.target.value)} value={email} required/>
+        <label htmlFor='mensaje'>{t("contact.message")} <span>*</span></label>
         <textarea name="mensaje" type="textarea" className="formulario-mensaje" onChange={e =>setMensaje(e.target.value)} value={mensaje} required/>
-        <p>{error}</p>
-        <button type="submit" disabled={error} className="formulario-boton">Enviar</button>
+        <p>{error ? t(`contact.err-${error}`):""}</p>
+        <button type="submit" disabled={error} className="formulario-boton">{t("contact.button")}</button>
       </form>
       <div>
           <div className="contenedor-fondo-imagen">
@@ -78,8 +82,8 @@ const Contact = ()=>{
 
       <div className="desactivado">
       <div className="contacto-modal">
-        <p className="contacto-modal-agradecimiento">Muchas gracias por su mensaje!</p>
-        <button onClick={ocultarModal} className='formulario-boton'>Continue</button>
+        <p className="contacto-modal-agradecimiento">{t("contact.modal.thanks")}</p>
+        <button onClick={ocultarModal} className='formulario-boton'>{t("contact.modal.button")}</button>
       </div>
       </div>
 
