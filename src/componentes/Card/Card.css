@@ -31,8 +31,9 @@
   margin: .5rem 0;
 }
 
-.card-info-descripcion{
-  font-size: .8rem;
+.card-info-logos{
+  display: flex;
+  justify-content: start;
 }
 
 
@@ -62,9 +63,6 @@
     line-height: 2rem;
   }
 
-  .card-info-descripcion{
-    font-size: 1rem;
-  }
 
 
 }
@@ -84,10 +82,6 @@
     margin: 1rem 0;
   }
 
-  .card-info-descripcion{
-    font-size: 1.8rem;
-    line-height: 2rem;
-  }
   .card-info-button-icon{
     width: 3rem;
     height: 3rem;
@@ -122,10 +116,11 @@
      margin: 0 0 .3rem 0;
    }
 
-   .card-info-descripcion{
-     font-size: 1rem;
-     line-height: 1.2rem;
-   }
+   .card-info-logos{
+    width: 3rem;
+    margin-right: 1rem;
+  }
+
    .card-info-button-icon{
     width: 2rem;
     height: 2rem;
