@@ -44,24 +44,13 @@
   "projects":{
     "section": "Proyectos",
     "card1":{
-      "title": "Ffarm Taid",
-      "techs": "HTML, CSS y React"
+      "title": "Ffarm Taid"
     },
     "card2":{
-      "title": "Reproductor de video",
-      "techs": "HTML, CSS y Javascript"
-    },
-    "card3":{
-      "title": "Calculadora",
-      "techs": "HTML, CSS, Javascript y React"
-    },
-    "card4":{
-      "title": "Anotador de tareas",
-      "techs": "HTML, CSS, Javascript y React"
+      "title": "Dynamite Fireworks"
     },
     "card5":{
-      "title": "Fixi",
-      "techs": "HTML, CSS y Ruby on Rails"
+      "title": "Fixi"
     }
   },
   "contact":{
