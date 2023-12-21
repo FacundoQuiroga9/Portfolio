@@ -74,4 +74,11 @@
     align-items: center;
     width: 70%;
   }
+  @media screen and (min-width: 1900px){
+    .aboutMe-info-texto{
+      width: 100%;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
 }

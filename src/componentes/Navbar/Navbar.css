@@ -7,7 +7,7 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-end;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 2;
   user-select: none;

@@ -24,7 +24,6 @@ const Hero = ()=>{
   };
   return(
     <section id="section-hero" className="hero-contenedor">
-      <div className="contenedor-prueba">
       <motion.div className="hero-foto-contenedor"
       ref={ref}
       initial="hidden"
@@ -46,7 +45,6 @@ const Hero = ()=>{
         <p className="hero-info-text">{t("hero.welcome")}</p>
         <button className="hero-info-cv"><a href={`/Resume.pdf`} target='_blanck' download='Resume_Facundo_Quiroga.pdf'>{t("hero.button")}</a></button>
       </motion.div>
-      </div>
 
     </section>
   )

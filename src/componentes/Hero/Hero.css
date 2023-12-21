@@ -5,11 +5,11 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  min-height: 100vh;
   color: white;
+  margin: 5rem 0;
 }
 .hero-foto-contenedor{
-  max-width: 50vw;
+  max-width: 50%;
   margin: 0 auto;
 }
 .hero-foto{
@@ -52,9 +52,6 @@ margin-top: 1rem;
 
 
 @media screen and (min-width: 420px){
-  .contenedor-prueba{
-    margin: 1rem auto 0;
-  }
   .hero-foto-contenedor{
     max-width: 60vw;
   }
@@ -96,20 +93,14 @@ margin-top: 1rem;
   .hero-foto{
     border:solid 1rem #85479b;
   }
-  .contenedor-prueba{
-    margin: 7rem auto 0;
-  }
 
 
 @media screen and (min-width: 1000px) {
-  .contenedor-prueba{
-    display: flex;
-    width: 80vw;
-    margin: 1rem auto 0;
-  }
   .hero-contenedor{
+    display: flex;
+    flex-direction: row;
     width: 80%;
-    margin: 0 auto;
+    margin: 8rem auto;
   }
   .hero-foto-contenedor{
     width: 30vw;
