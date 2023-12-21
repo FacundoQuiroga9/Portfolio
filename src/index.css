@@ -145,4 +145,5 @@ body {
   /* opcional */ font-smooth: always;
   /* opcional */ -webkit-font-smoothing: antialiased;
   /* opcional */ -moz-osx-font-smoothing: grayscale;
+  user-select: none;
 }

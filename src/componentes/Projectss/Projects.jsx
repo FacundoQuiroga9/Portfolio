@@ -21,8 +21,8 @@ const Projects = ()=>{
     <h3 className="section-projects">{t("projects.section")}</h3>
     <div className="projects-contenedor">
     <Card imagen= {image1} nombre={t("projects.card5.title")} tecnologias={t("projects.card5.techs")} url="https://github.com/elisaherre/FIXI_SERVICE" url2="http://www.fixiservice.xyz/">
-      <img className='logo-card' src={css} alt="" />
       <img className='logo-card' src={html} alt="" />
+      <img className='logo-card' src={css} alt="" />
       <img className='logo-card' src={bootstrap} alt="" />
       <img className='logo-card' src={postgresql} alt="" />
       <img className='logo-card' src={ruby} alt="" />
