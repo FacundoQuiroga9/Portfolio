@@ -1,7 +1,7 @@
 import './Navbar.css'
 import Logo from '../Logo/Logo'
-import gb from '../../imagenes/gb.svg'
-import español from '../../imagenes/es.svg'
+import gb from '../../imagenes/gb.png'
+import español from '../../imagenes/es.png'
 import { useState } from 'react'
 import {useTranslation} from 'react-i18next'
 

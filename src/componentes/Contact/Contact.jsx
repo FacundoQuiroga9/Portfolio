@@ -1,5 +1,5 @@
 import './Contact.css'
-import imagenContacto from "../../imagenes/DSC_09822.png"
+import imagenContacto from "../../imagenes/fq.png"
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import {useTranslation} from 'react-i18next'

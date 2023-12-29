@@ -19,6 +19,8 @@ import Railslogo from '../SVGs/Rails/Rails'
 import Postgresqllogo from '../SVGs/PostgreSQL/Postgresql'
 import { useState } from 'react'
 import {useTranslation} from 'react-i18next'
+import { motion } from "framer-motion"
+import { useInView } from 'react-intersection-observer';
 
 const Skills = ()=>{
     const [modalHtml, setModalHtml] = useState(false)
@@ -40,12 +42,41 @@ const Skills = ()=>{
     const [modalFigma, setModalFigma] = useState(false)
     const [t, i18n]= useTranslation("global")
 
+    const [ref, inView] = useInView({
+      triggerOnce: true,
+    });
+
+    const skillsTitlesAnimation = {
+      hidden: {  x:-300, opacity:0},
+      visible: { x: 0, opacity: 1 },
+    };
+    const skillsIconsAnimation = {
+      hidden: {  x:100, opacity:0},
+      visible: { x: 0, opacity: 1 },
+    };
+
   return(
     <section className="skills-contenedor" id='skills'>
-      <h3 className="skills-title">{t("skills.section")}</h3>
+      <motion.h3 className="skills-title"
+      ref={ref}
+      initial="hidden"
+      animate={inView ? 'visible' : 'hidden'}
+      variants={skillsTitlesAnimation}
+      transition={{duration:1, delay:.5}}
+      >
+        {t("skills.section")}
+      </motion.h3>
       <div className="skills-info-contenedor">
         <div className="skills-info-contenido-contenedor">
-          <h4 className="skills-info-contenido-subtitulo">{t("skills.development.title")}</h4>
+          <motion.h4 className="skills-info-contenido-subtitulo"
+          ref={ref}
+          initial="hidden"
+          animate={inView ? 'visible' : 'hidden'}
+          variants={skillsTitlesAnimation}
+          transition={{duration:1, delay:.5}}
+          >
+            {t("skills.development.title")}
+          </motion.h4>
           <div className="skills-info-contenido-logos">
             <Htmllogo onClick={()=> setModalHtml(!modalHtml)} />
             <Modal estado={modalHtml} cambiarEstado={setModalHtml} imagen={<Htmllogo size="modal-svg"/>} descripcion={t("skills.development.html")}/>
@@ -92,7 +123,14 @@ const Skills = ()=>{
           </div>
         </div>
         <div className="skills-info-contenido-contenedor">
-          <h4 className="skills-info-contenido-subtitulo">{t("skills.design.title")}</h4>
+          <motion.h4 className="skills-info-contenido-subtitulo"
+          ref={ref}
+          initial="hidden"
+          animate={inView ? 'visible' : 'hidden'}
+          variants={skillsTitlesAnimation}
+          transition={{duration:1, delay:.5}}>
+            {t("skills.design.title")}
+            </motion.h4>
           <div className="skills-info-contenido-logos">
 
             <Figma onClick={()=> setModalFigma(!modalFigma)} />
