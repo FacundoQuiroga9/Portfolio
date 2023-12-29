@@ -51,8 +51,8 @@ const Skills = ()=>{
       visible: { x: 0, opacity: 1 },
     };
     const skillsIconsAnimation = {
-      hidden: {  x:100, opacity:0},
-      visible: { x: 0, opacity: 1 },
+      hidden: { opacity:0},
+      visible: { opacity: 1 },
     };
 
   return(
@@ -77,7 +77,13 @@ const Skills = ()=>{
           >
             {t("skills.development.title")}
           </motion.h4>
-          <div className="skills-info-contenido-logos">
+          <motion.div className="skills-info-contenido-logos"
+          ref={ref}
+          initial="hidden"
+          animate={inView ? 'visible' : 'hidden'}
+          variants={skillsIconsAnimation}
+          transition={{duration:1, delay:1}}
+          >
             <Htmllogo onClick={()=> setModalHtml(!modalHtml)} />
             <Modal estado={modalHtml} cambiarEstado={setModalHtml} imagen={<Htmllogo size="modal-svg"/>} descripcion={t("skills.development.html")}/>
 
@@ -120,7 +126,7 @@ const Skills = ()=>{
             <Wordpress onClick={()=> setModalWordpress(!modalWordpress)} />
             <Modal estado={modalWordpress} cambiarEstado={setModalWordpress} imagen={<Wordpress size="modal-svg" />} descripcion={t("skills.development.wordpress")}/>
 
-          </div>
+          </motion.div>
         </div>
         <div className="skills-info-contenido-contenedor">
           <motion.h4 className="skills-info-contenido-subtitulo"
@@ -131,7 +137,13 @@ const Skills = ()=>{
           transition={{duration:1, delay:.5}}>
             {t("skills.design.title")}
             </motion.h4>
-          <div className="skills-info-contenido-logos">
+          <motion.div className="skills-info-contenido-logos"
+          ref={ref}
+          initial="hidden"
+          animate={inView ? 'visible' : 'hidden'}
+          variants={skillsIconsAnimation}
+          transition={{duration:1, delay:1}}
+          >
 
             <Figma onClick={()=> setModalFigma(!modalFigma)} />
             <Modal estado={modalFigma} cambiarEstado={setModalFigma} imagen={<Figma size="modal-svg" />} descripcion={t("skills.design.figma")}/>
@@ -142,7 +154,7 @@ const Skills = ()=>{
             <Illustrator onClick={()=> setModalIllustrator(!modalIllustrator)} />
             <Modal estado={modalIllustrator} cambiarEstado={setModalIllustrator} imagen={<Illustrator size="modal-svg" />} descripcion={t("skills.design.illustrator")}/>
 
-          </div>
+          </motion.div>
         </div>
 
       </div>
