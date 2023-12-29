@@ -148,3 +148,14 @@ body {
   user-select: none;
   hyphens: none;
 }
+
+.section{
+  height: calc(100vh - 96px);
+}
+
+@media screen and (min-width: 750px){
+
+  .section{
+    height: calc(100vh - 128px);
+  }
+}

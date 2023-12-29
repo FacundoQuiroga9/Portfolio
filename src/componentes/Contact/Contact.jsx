@@ -29,7 +29,7 @@ const Contact = ()=>{
   }
 
   return(
-    <div id='contacts'>
+    <div id='contacts' className='section'>
     <h3 className="section-title">{t("contact.section")}</h3>
     <div className='contacto-contenedor'>
       <div className="formulario-contenedor">

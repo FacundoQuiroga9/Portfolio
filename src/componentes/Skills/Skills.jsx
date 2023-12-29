@@ -56,7 +56,7 @@ const Skills = ()=>{
     };
 
   return(
-    <section className="skills-contenedor" id='skills'>
+    <section className="skills-contenedor section" id='skills'>
       <motion.h3 className="skills-title"
       ref={ref}
       initial="hidden"

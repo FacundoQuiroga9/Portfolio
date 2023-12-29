@@ -20,7 +20,7 @@ const AboutMe= ()=>{
     visible: { x: 0, opacity: 1 },
   };
   return(
-    <section className="aboutMe-contenedor" id='about-me'>
+    <section className="aboutMe-contenedor section" id='about-me'>
       <motion.div className="aboutMe-foto-contenedor"
       ref={ref}
       initial="hidden"

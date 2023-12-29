@@ -6,7 +6,6 @@
   text-align: center;
   width: 100%;
   color: white;
-  margin: 5rem 0;
 }
 .hero-foto-contenedor{
   max-width: 50%;
@@ -100,7 +99,7 @@ margin-top: 1rem;
     display: flex;
     flex-direction: row;
     width: 80%;
-    margin: 8rem auto;
+    margin: 0 auto;
   }
   .hero-foto-contenedor{
     width: 30vw;

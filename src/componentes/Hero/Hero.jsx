@@ -23,7 +23,7 @@ const Hero = ()=>{
     visible: { x: 0, opacity: 1 },
   };
   return(
-    <section id="section-hero" className="hero-contenedor">
+    <section id="section-hero" className="hero-contenedor section">
       <motion.div className="hero-foto-contenedor"
       ref={ref}
       initial="hidden"
