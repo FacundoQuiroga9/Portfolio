@@ -17,8 +17,8 @@ import js from '../../imagenes/js.png'
 const Projects = ()=>{
   const [t, i18n]= useTranslation("global")
   return(
-    <div id='projects'>
-    <h3 className="section-projects section">{t("projects.section")}</h3>
+    <div id='projects' className='section'>
+    <h3 className="section-projects-title">{t("projects.section")}</h3>
     <div className="projects-contenedor">
     <Card imagen= {image1} nombre={t("projects.card5.title")} tecnologias={t("projects.card5.techs")} url="https://github.com/elisaherre/FIXI_SERVICE" url2="http://www.fixiservice.xyz/">
       <img className='logo-card' src={html} alt="" />

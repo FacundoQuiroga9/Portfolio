@@ -150,7 +150,7 @@ body {
 }
 
 .section{
-  height: calc(100vh - 96px);
+  min-height: calc(100vh - 96px);
   scroll-margin-top: 10rem;
 }
 
