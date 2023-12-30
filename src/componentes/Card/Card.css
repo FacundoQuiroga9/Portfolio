@@ -7,7 +7,7 @@
   box-shadow: 0 0 5px 2.5px blueviolet;
   border-radius: 6px;
   transition: all 0.25s;
-  margin: 3rem 0;
+  margin: 3rem 0 0 0;
 }
 .card-contenedor:hover{
   box-shadow: 0 0 10px 5px blueviolet;
@@ -70,7 +70,7 @@
   .card-contenedor{
     height: 16rem;
     width: 85%;
-    margin: 3rem auto;
+    margin: 3rem auto 0 auto;
   }
 
   .card-info-contenedor{

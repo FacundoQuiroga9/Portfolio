@@ -47,7 +47,7 @@ const Skills = ()=>{
     });
 
     const skillsTitlesAnimation = {
-      hidden: {  x:-300, opacity:0},
+      hidden: {  x:300, opacity:0},
       visible: { x: 0, opacity: 1 },
     };
     const skillsIconsAnimation = {

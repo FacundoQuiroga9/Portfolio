@@ -1,3 +1,5 @@
+#projects{
+}
 .section-projects-title{
   text-align: end;
   line-height: 3.5rem;
@@ -12,7 +14,7 @@
 
 .projects-contenedor{
   max-width: 90vw;
-  margin: 2rem auto;
+  margin: 0rem auto;
   display: block;
 }
 
@@ -60,6 +62,8 @@
   }
   .section-projects-title{
     font-size: 4rem;
+    text-align: center;
+    margin: 0 auto 2rem 0;
   }
 
   .logo-card{

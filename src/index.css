@@ -137,6 +137,7 @@ svg{
 /* Configuramos la tipografía para toda la web */
 body {
   min-height  : 100vh;
+  max-width: 100vw;
   font-size   : 100%;
   font-family : var(--tipo-principal);
   color       : var(--negro);
@@ -147,6 +148,7 @@ body {
   /* opcional */ -moz-osx-font-smoothing: grayscale;
   user-select: none;
   hyphens: none;
+  overflow-x: hidden;
 }
 
 .section{
@@ -157,6 +159,6 @@ body {
 @media screen and (min-width: 750px){
 
   .section{
-    height: calc(100vh - 128px);
+    min-height: calc(100vh - 128px);
   }
 }

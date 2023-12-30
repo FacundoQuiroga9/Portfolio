@@ -1,9 +1,24 @@
-import { Children } from 'react'
 import './Card.css'
+import { motion } from "framer-motion"
+import { useInView } from 'react-intersection-observer';
 
-const Card = ({imagen, nombre, tecnologias, url, url2, children})=>{
+const Card = ({imagen, nombre, url, url2, children})=>{
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  const cardAnimation = {
+    hidden: {  opacity:0},
+    visible: { opacity: 1 },
+  };
   return(
-    <div className="card-contenedor">
+    <motion.div className="card-contenedor"
+    ref={ref}
+    initial="hidden"
+    animate={inView ? 'visible' : 'hidden'}
+    variants={cardAnimation}
+    transition={{duration:1, delay:1}}
+    >
         <img src={imagen} alt="Imagen de proyecto" className='card-img'/>
       <div className="card-info-contenedor">
         <h3 className="card-info-nombre">{nombre}</h3>
@@ -20,7 +35,7 @@ const Card = ({imagen, nombre, tecnologias, url, url2, children})=>{
         </a></div>
 
       </div>
-    </div>
+    </motion.div>
   )
 }
 

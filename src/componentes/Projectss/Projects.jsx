@@ -12,13 +12,31 @@ import ruby from '../../imagenes/ruby.png'
 import ror from '../../imagenes/ror.png'
 import react from '../../imagenes/react.png'
 import js from '../../imagenes/js.png'
+import { motion } from "framer-motion"
+import { useInView } from 'react-intersection-observer';
 
 
 const Projects = ()=>{
   const [t, i18n]= useTranslation("global")
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  const proyectsTitleAnimation = {
+    hidden: {  x:300, opacity:0},
+    visible: { x: 0, opacity: 1 },
+  };
   return(
     <div id='projects' className='section'>
-    <h3 className="section-projects-title">{t("projects.section")}</h3>
+    <motion.h3 className="section-projects-title"
+    ref={ref}
+    initial="hidden"
+    animate={inView ? 'visible' : 'hidden'}
+    variants={proyectsTitleAnimation}
+    transition={{duration:1, delay:.5}}
+    >
+      {t("projects.section")}
+    </motion.h3>
     <div className="projects-contenedor">
     <Card imagen= {image1} nombre={t("projects.card5.title")} tecnologias={t("projects.card5.techs")} url="https://github.com/elisaherre/FIXI_SERVICE" url2="http://www.fixiservice.xyz/">
       <img className='logo-card' src={html} alt="" />
