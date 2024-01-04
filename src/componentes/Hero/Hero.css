@@ -4,11 +4,14 @@
 }
 
 .hero-title{
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 .hero-subtitle{
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+.hero-text{
+  font-size: .9rem;
 }
 .btn-custom{
   background-color: var(--purple);
@@ -27,13 +30,16 @@
 @media (min-width:768px){
 
 .hero-title{
+  font-size: 2rem;
   font-weight: bold;
   text-align: start;
 }
 .hero-subtitle{
+  font-size: 1.5rem;
   text-align: start;
 }
 .hero-text{
+  font-size: 1rem;
   text-align: start;
 }
 .btn-custom{
@@ -41,3 +47,20 @@
 }
 
 }
+@media (min-width:992px){
+
+  .hero-title{
+    font-size: 2.5rem;
+  }
+  .hero-subtitle{
+    font-size: 2rem;
+  }
+  .hero-text{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .btn-custom{
+    margin: 0;
+  }
+
+  }
