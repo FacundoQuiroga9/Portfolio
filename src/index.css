@@ -12,8 +12,9 @@
 
 /* Aquí definimos las Custom properties */
 :root{
-  --negro         : #393939;
-  --violeta         : rgb(158, 4, 212);
+  --black         : #393939;
+  --purple         : #85479b;
+  --white         : #e1e1e1;
 
   /* Tipografía */
   --tipo-principal   : Helvetica, Arial, sans-serif;
@@ -83,7 +84,7 @@ li {
 /* Configuramos anclas suaves */
 html {
   scroll-behavior: smooth;
-  background-color: #170C18;;
+
 }
 
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
@@ -147,12 +148,15 @@ body {
   /* opcional */ -webkit-font-smoothing: antialiased;
   /* opcional */ -moz-osx-font-smoothing: grayscale;
   user-select: none;
+  scrollbar-width: none;
   hyphens: none;
   overflow-x: hidden;
+  background-color: #170C18;
 }
 
-.section{
+section{
   min-height: calc(100vh - 96px);
+  max-width: 100vw;
   scroll-margin-top: 10rem;
 }
 

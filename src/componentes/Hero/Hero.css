@@ -1,141 +1,43 @@
-.hero-contenedor{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  color: white;
-}
-.hero-foto-contenedor{
-  max-width: 50%;
-  margin: 0 auto;
-}
 .hero-foto{
-  border: solid .6rem #85479b;
+  border: 1rem solid var(--purple);
   border-radius: 50%;
 }
-.hero-info-contenedor{
-  max-width: 60vw;
-  margin: 1rem auto;
-}
 
-.hero-info-nombre{
-  font-size: 1.3rem;
-  line-height: 2rem;
+.hero-title{
+  font-size: 2rem;
   font-weight: bold;
 }
-.hero-info-trabajo{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-.hero-info-text{
-margin-top: 1rem;
-}
-.hero-info-cv{
-  margin: 1rem auto;
-
-}
-.hero-info-cv a{
-  font-weight: bold;
-  margin: 1rem auto;
-  background-color: #85479b;
-  padding: 1rem;
-  border-radius: 1.5rem;
-  cursor: pointer;
-}
-.hero-info-cv a:hover{
-  background-color: white;
-  color: #85479b;
-}
-
-
-@media screen and (min-width: 420px){
-  .hero-foto-contenedor{
-    max-width: 60vw;
-  }
-
-  .hero-foto{
-    border:solid .7rem #85479b;
-  }
-  .hero-info-contenedor{
-    max-width: 70vw;
-    margin: 1.5rem auto;
-  }
-
-  .hero-info-nombre{
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-  .hero-info-trabajo{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  .hero-info-text{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  margin-top: 1rem;
-  }
-  .hero-info-cv a{
-    font-size: 1.3rem;
-    margin: 1.5rem auto;
-    background-color: #85479b;
-    padding: 1.5rem;
-    border-radius: 3rem;
-  }
-}
-
-@media screen and (min-width: 750px) {
-  .hero-foto-contenedor{
-    max-width: 50vw;
-  }
-  .hero-foto{
-    border:solid 1rem #85479b;
-  }
-
-
-@media screen and (min-width: 1000px) {
-  .hero-contenedor{
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    margin: 0 auto;
-  }
-  .hero-foto-contenedor{
-    width: 30vw;
-    margin: 0 auto;
-  }
-  .hero-foto{
-    border: solid 1.2rem #85479b;
-    border-radius: 50%;
-  }
-  .hero-info-contenedor{
-    text-align: start;
-    margin: auto 0 auto 3rem;
-  }
-
-  .hero-info-nombre{
-    font-size: 3rem;
-    line-height: 4rem;
-  }
-  .hero-info-trabajo{
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-  .hero-info-text{
-  margin-top: 1rem;
+.hero-subtitle{
   font-size: 1.5rem;
-  line-height: 2rem;
-  }
-  .hero-info-cv{
-  margin: 0;
-  }
-  .hero-info-cv a{
-    font-size: 1rem;
-    margin: 1rem 0;
-    background-color: #85479b;
-    padding: 1.3rem;
-    border-radius: 2rem;
-  }
 }
+.btn-custom{
+  background-color: var(--purple);
+  font-weight: bold;
+  border-radius: 4rem;
+  margin: 1rem auto;
+  width: 10rem;
+}
+
+.btn-custom:hover{
+  background-color: var(--white);
+  color: var(--purple);
+  border-radius: 4rem;
+  margin: 1rem auto;
+}
+@media (min-width:768px){
+
+.hero-title{
+  font-weight: bold;
+  text-align: start;
+}
+.hero-subtitle{
+  text-align: start;
+}
+.hero-text{
+  text-align: start;
+}
+.btn-custom{
+  margin: 0;
+}
+
 }
