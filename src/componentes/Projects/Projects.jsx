@@ -22,11 +22,11 @@ const Projects = ()=>{
   });
 
   return(
-    <section id='projects' className='container d-flex flex-column justify-content-center section'>
-    <h3 className="projects-title text-center">
+    <section ref={ref} id='projects' className='container d-flex flex-column justify-content-center section'>
+    <h3 className={`projects-title text-center animate__animated ${inView ? 'animate__shakeX' : ''}`}>
       {t("projects.section")}
     </h3>
-    <div className="row justify-content-center">
+    <div className={`row justify-content-center animate__animated ${inView ? 'animate__fadeIn animate__slower' : ''}`}>
         <Card imagen= {image1} nombre={t("projects.card5.title")} tecnologias={t("projects.card5.techs")} url="https://github.com/elisaherre/FIXI_SERVICE" url2="http://www.fixiservice.xyz/">
           <img className='logo-card' src={html} alt="" />
           <img className='logo-card' src={css} alt="" />

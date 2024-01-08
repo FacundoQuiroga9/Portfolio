@@ -46,11 +46,11 @@ const Skills = ()=>{
     });
 
   return(
-    <section className="container section text-center d-flex flex-column justify-content-center" id='skills'>
-      <h3 className="skills-title">
+    <section ref={ref} className="container section text-center d-flex flex-column justify-content-center" id='skills'>
+      <h3 className={`skills-title animate__animated ${inView ? 'animate__shakeX' : ''}`}>
         {t("skills.section")}
       </h3>
-      <div className="row justify-content-center">
+      <div className={`row justify-content-center animate__animated ${inView ? 'animate__fadeIn animate__slower' : ''}`}>
         <div className="col-10 col-md-8 col-lg-5">
           <h4 className="skills-subtitle">
             {t("skills.development.title")}

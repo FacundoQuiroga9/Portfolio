@@ -19,7 +19,7 @@ const AboutMe= ()=>{
         <img src={ReactonRails} alt="Foto de Facundo" className={`aboutMe-image animate__animated ${inView ? 'animate__backInUp animate__slow' : ''}`} />
       </div>
       <div className="col-12 col-md-6 col-lg-8 col-xl-8 px-5 px-md-2 px-lg-4">
-        <h3 className={`aboutMe-title animate__animated ${inView ? 'animate__rotateInDownLeft' : ''}`}>{t("about.section")}</h3>
+        <h3 className={`aboutMe-title animate__animated ${inView ? 'animate__shakeX' : ''}`}>{t("about.section")}</h3>
         <p className={`aboutMe-text animate__animated ${inView ? 'animate__fadeIn animate__slower' : ''}`}>{t("about.text")}</p>
       </div>
       </div>

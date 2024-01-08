@@ -34,11 +34,11 @@ const Contact = ()=>{
   });
 
   return(
-    <section id='contacts' className='container d-flex flex-column justify-content-center section'>
-    <h3 className="contact-title">
+    <section ref={ref} id='contacts' className='container d-flex flex-column justify-content-center section'>
+    <h3 className={`contact-title text-center animate__animated ${inView ? 'animate__shakeX' : ''}`}>
       {t("contact.section")}
       </h3>
-      <div className="form-container">
+      <div className={`form-container animate__animated ${inView ? 'animate__fadeIn animate__slower' : ''}`}>
       <form action='' className='form' id='formulario'
           onSubmit={e=>{
             e.preventDefault();
