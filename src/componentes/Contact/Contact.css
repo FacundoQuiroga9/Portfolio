@@ -79,16 +79,18 @@ color: #85479b;
   margin: 1rem auto;
 }
 .contacto-logos a{
+  height: 3rem;
   width: 3rem;
-  max-height: 3rem;
   margin: 0 1rem;
-  border-radius: 35%;
   background-color: #85479b;
-  padding: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.contacto-logos a> svg{
-  margin: 0;
+.contacto-logos a> i{
+  width: 100%;
+  margin: 0 auto;
 }
 .contacto-logos a:hover{
   background-color: white;
@@ -97,8 +99,8 @@ color: #85479b;
 .contacto-logo{
   width: 100%;
   }
-  .contacto-logos a:hover path{
-    fill: #85479b;
+  .contacto-logos a:hover i{
+    color: #85479b;
   }
 
 form p{

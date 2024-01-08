@@ -19,7 +19,6 @@ import Railslogo from '../SVGs/Rails/Rails'
 import Postgresqllogo from '../SVGs/PostgreSQL/Postgresql'
 import { useState } from 'react'
 import {useTranslation} from 'react-i18next'
-import { motion } from "framer-motion"
 import { useInView } from 'react-intersection-observer';
 
 const Skills = ()=>{
@@ -46,44 +45,17 @@ const Skills = ()=>{
       triggerOnce: true,
     });
 
-    const skillsTitlesAnimation = {
-      hidden: {  x:300, opacity:0},
-      visible: { x: 0, opacity: 1 },
-    };
-    const skillsIconsAnimation = {
-      hidden: { opacity:0},
-      visible: { opacity: 1 },
-    };
-
   return(
-    <section className="skills-contenedor section" id='skills'>
-      <motion.h3 className="skills-title"
-      ref={ref}
-      initial="hidden"
-      animate={inView ? 'visible' : 'hidden'}
-      variants={skillsTitlesAnimation}
-      transition={{duration:1, delay:.5}}
-      >
+    <section className="container section text-center" id='skills'>
+      <h3 className="skills-title">
         {t("skills.section")}
-      </motion.h3>
-      <div className="skills-info-contenedor">
-        <div className="skills-info-contenido-contenedor">
-          <motion.h4 className="skills-info-contenido-subtitulo"
-          ref={ref}
-          initial="hidden"
-          animate={inView ? 'visible' : 'hidden'}
-          variants={skillsTitlesAnimation}
-          transition={{duration:1, delay:.5}}
-          >
+      </h3>
+      <div className="row justify-content-center">
+        <div className="col-10 col-md-8 col-lg-5">
+          <h4 className="skills-subtitle">
             {t("skills.development.title")}
-          </motion.h4>
-          <motion.div className="skills-info-contenido-logos"
-          ref={ref}
-          initial="hidden"
-          animate={inView ? 'visible' : 'hidden'}
-          variants={skillsIconsAnimation}
-          transition={{duration:1, delay:1}}
-          >
+          </h4>
+          <div className="skills-logos-container">
             <Htmllogo onClick={()=> setModalHtml(!modalHtml)} />
             <Modal estado={modalHtml} cambiarEstado={setModalHtml} imagen={<Htmllogo size="modal-svg"/>} descripcion={t("skills.development.html")}/>
 
@@ -126,24 +98,13 @@ const Skills = ()=>{
             <Wordpress onClick={()=> setModalWordpress(!modalWordpress)} />
             <Modal estado={modalWordpress} cambiarEstado={setModalWordpress} imagen={<Wordpress size="modal-svg" />} descripcion={t("skills.development.wordpress")}/>
 
-          </motion.div>
+          </div>
         </div>
-        <div className="skills-info-contenido-contenedor">
-          <motion.h4 className="skills-info-contenido-subtitulo"
-          ref={ref}
-          initial="hidden"
-          animate={inView ? 'visible' : 'hidden'}
-          variants={skillsTitlesAnimation}
-          transition={{duration:1, delay:.5}}>
+        <div className="col-10 col-md-8 col-lg-5">
+          <h4 className="skills-subtitle">
             {t("skills.design.title")}
-            </motion.h4>
-          <motion.div className="skills-info-contenido-logos"
-          ref={ref}
-          initial="hidden"
-          animate={inView ? 'visible' : 'hidden'}
-          variants={skillsIconsAnimation}
-          transition={{duration:1, delay:1}}
-          >
+            </h4>
+          <div className="skills-logos-container">
 
             <Figma onClick={()=> setModalFigma(!modalFigma)} />
             <Modal estado={modalFigma} cambiarEstado={setModalFigma} imagen={<Figma size="modal-svg" />} descripcion={t("skills.design.figma")}/>
@@ -154,7 +115,7 @@ const Skills = ()=>{
             <Illustrator onClick={()=> setModalIllustrator(!modalIllustrator)} />
             <Modal estado={modalIllustrator} cambiarEstado={setModalIllustrator} imagen={<Illustrator size="modal-svg" />} descripcion={t("skills.design.illustrator")}/>
 
-          </motion.div>
+          </div>
         </div>
 
       </div>
