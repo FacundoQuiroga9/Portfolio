@@ -1,4 +1,4 @@
-.card-contenedor{
+.card-container{
   color: white;
   display: flex;
   width: 90%;
@@ -9,7 +9,7 @@
   transition: all 0.25s;
   margin: 3rem 0 0 0;
 }
-.card-contenedor:hover{
+.card-container:hover{
   box-shadow: 0 0 10px 5px blueviolet;
   transform: translateY(-1rem);
 }
@@ -19,85 +19,92 @@
   height: 100%;
 }
 
-.card-info-contenedor{
+.card-info-container{
   max-width: 60%;
  padding: 0 .5rem;
  margin-left: .5rem;
 }
 
-.card-info-nombre{
+.card-title{
   font-weight: bold;
   font-size: .8rem;
   line-height: 1.5rem;
   margin: .5rem 0;
 }
 
-.card-info-logos{
+.card-logos{
   margin: 1rem 0 2rem 0;
   display: flex;
   justify-content: start;
 }
 
 
-.card-info-button:hover{
-  color: #85479b;
-
-}
-.enlaces-contenedor{
+.buttons-container{
   display: flex;
   margin-top: 3rem;
 }
 
-.card-info-button-icon{
-  width: 2rem;
-  height: 2rem;
-  margin: 0 .5rem;
+.card-button:hover{
+  color: #85479b;
+
 }
+.card-button{
+  margin: 0 1rem 0 0;
+  padding: 0;
+}
+ .card-button > i{
+  font-size: 1.5rem;
+  margin: 0;
+ }
 
 @media screen and (min-width: 420px){
-  .card-contenedor{
+  .card-container{
     height: 12rem;
 
   }
 
-  .card-info-nombre{
+  .card-title{
     font-size: 1.3rem;
     line-height: 2rem;
   }
 }
 
-@media screen and (min-width: 750px) {
-  .card-contenedor{
-    height: 16rem;
-    width: 85%;
-    margin: 3rem auto 0 auto;
-  }
-
-  .card-info-contenedor{
-   margin-left: 1.5rem;
-  }
-
-  .card-info-nombre{
-    font-size: 1.5rem;
-    line-height: 2.8rem;
-    margin: 1rem 0;
-  }
-
-  .enlaces-contenedor{
+@media screen and (min-width: 768px) {
+  .card-container{
+    margin:2rem;
+    width: 15rem;
+    height: 17rem;
     display: flex;
-    margin-top: 5rem;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 1rem;
   }
+  .card-img{
+    width: 100%;
+    height: 10rem;
+    object-fit:cover;
+  }
+  .card-info-container{
+    max-width: 100%;
+    margin: 0;
+   }
 
-  .card-info-button-icon{
-    width: 3rem;
-    height: 3rem;
+   .card-title{
+     font-size: .8rem;
+     line-height: 1rem;
+     margin: 1rem 0 0 0;
+   }
+
+   .card-info-button-icon{
+    width: 2rem;
+    height: 2rem;
     margin: 0 .5rem;
   }
 }
 
 
-@media screen and (min-width: 1000px) {
-  .card-contenedor{
+@media screen and (min-width: 992px) {
+  .card-container{
     margin:2rem;
     width: 16rem;
     height: 22rem;
@@ -111,18 +118,18 @@
     height: 10rem;
     object-fit:cover;
   }
-  .card-info-contenedor{
+  .card-info-container{
     max-width: 100%;
     margin: 0;
    }
 
-   .card-info-nombre{
+   .card-title{
      font-size: 1.2rem;
      line-height: 1.5rem;
      margin: 1rem 0 0 0;
    }
 
-   .card-info-logos{
+   .card-logos{
     width: 3rem;
     margin-right: 1rem;
   }
@@ -130,6 +137,5 @@
    .card-info-button-icon{
     width: 2rem;
     height: 2rem;
-    margin: 0 .5rem;
   }
 }
