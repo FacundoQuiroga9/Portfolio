@@ -1,21 +1,14 @@
 #projects{
 }
-.section-projects-title{
+.projects-title{
   text-align: end;
   line-height: 3.5rem;
   font-size: 3rem;
   color: white;
-  margin-right: 3rem;
   font-weight: bold;
 }
 .section-projects span{
   color: rgb(158, 4, 212);
-}
-
-.projects-contenedor{
-  max-width: 90vw;
-  margin: 0rem auto;
-  display: block;
 }
 
 .logo-card{
@@ -28,17 +21,15 @@
   filter: grayscale(0);
 }
 @media (min-width: 420px){
-  .section-projects-title{
+  .projects-title{
     font-size: 2.5rem;
   }
 }
 
 @media screen and (min-width: 750px){
-
-  .section-projects-title{
+  .projects-title{
     font-size: 5rem;
     line-height: 5.5rem;
-    margin-right: 7rem;
   }
   .logo-card{
     height: 1.5rem;
@@ -49,21 +40,9 @@
 }
 
 @media (min-width: 1000px){
-  #projects{
-    width: 70%;
-    margin: 0 auto;
-  }
-  .projects-contenedor{
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .section-projects-title{
+  .projects-title{
     font-size: 4rem;
     text-align: center;
-    margin: 0 auto 2rem 0;
   }
 
   .logo-card{
