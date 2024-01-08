@@ -46,7 +46,7 @@ const Skills = ()=>{
     });
 
   return(
-    <section className="container section text-center" id='skills'>
+    <section className="container section text-center d-flex flex-column justify-content-center" id='skills'>
       <h3 className="skills-title">
         {t("skills.section")}
       </h3>

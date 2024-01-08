@@ -22,7 +22,7 @@ const Projects = ()=>{
   });
 
   return(
-    <div id='projects' className='container section'>
+    <section id='projects' className='container d-flex flex-column justify-content-center section'>
     <h3 className="projects-title text-center">
       {t("projects.section")}
     </h3>
@@ -49,7 +49,7 @@ const Projects = ()=>{
         <img className='logo-card' src={react} alt="" />
       </Card>
     </div>
-    </div>
+    </section>
   )
 }
 

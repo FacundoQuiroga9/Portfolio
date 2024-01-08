@@ -34,7 +34,7 @@ const Contact = ()=>{
   });
 
   return(
-    <div id='contacts' className='container section'>
+    <section id='contacts' className='container d-flex flex-column justify-content-center section'>
     <h3 className="contact-title">
       {t("contact.section")}
       </h3>
@@ -90,7 +90,7 @@ const Contact = ()=>{
         <button onClick={ocultarModal} className='formulario-boton'>{t("contact.modal.button")}</button>
       </div>
       </div>
-    </div>
+    </section>
   )
 
 }
