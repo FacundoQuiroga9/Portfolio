@@ -3,7 +3,6 @@ import imagenContacto from "../../imagenes/fq.png"
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import {useTranslation} from 'react-i18next'
-import { motion } from "framer-motion"
 import { useInView } from 'react-intersection-observer';
 
 const Contact = ()=>{
@@ -34,80 +33,41 @@ const Contact = ()=>{
     triggerOnce: true,
   });
 
-  const contactTitleAnimation = {
-    hidden: {  x:-300, opacity:0},
-    visible: { x: 0, opacity: 1 },
-  };
-  const contactFormAnimation = {
-    hidden: {  x:-300, opacity:0},
-    visible: { x: 0, opacity: 1 },
-  };
-  const contactPhotoAnimation = {
-    hidden: {  x:300, opacity:0},
-    visible: { x: 0, opacity: 1 },
-  };
   return(
-    <div id='contacts' className='section'>
-    <motion.h3 className="section-title"
-    ref={ref}
-    initial="hidden"
-    animate={inView ? 'visible' : 'hidden'}
-    variants={contactTitleAnimation}
-    transition={{duration:1, delay:.5}}
-    >
+    <div id='contacts' className='container section'>
+    <h3 className="contact-title">
       {t("contact.section")}
-      </motion.h3>
-    <div className='contacto-contenedor'>
-      <div className="formulario-contenedor">
-
-
-
-      <motion.form action='' className='formulario' id='formulario'
+      </h3>
+      <div className="form-container">
+      <form action='' className='form' id='formulario'
           onSubmit={e=>{
             e.preventDefault();
             if(!error){
               emailjs.sendForm('service_pjc9e5i','template_blsf4ww', e.target,'eyhRaGuc2ZMqOOaax')
-            .then(modal.classList.add('contacto-modal-contenedor'))
+            .then(modal.classList.add('modal-container'))
             .catch(error => console.log(error))
             setNombre('')
             setEmail('')
             setMensaje('')
             }
             }}
-            ref={ref}
-            initial="hidden"
-            animate={inView ? 'visible' : 'hidden'}
-            variants={contactFormAnimation}
-            transition={{duration:1, delay:1}}
     >
         <label htmlFor='nombre'>{t("contact.name")} <span>*</span></label>
-        <input  name="nombre" type="text" className="formulario-nombre" value={nombre} onChange={e =>setNombre(e.target.value)} required/>
+        <input  name="nombre" type="text" className="form-name" value={nombre} onChange={e =>setNombre(e.target.value)} required/>
         <label htmlFor='mail'>{t("contact.e-mail")} <span>*</span></label>
-        <input placeholder={t("contact.placeholder")}  name="mail" type="text" className="formulario-mail" onChange={e =>setEmail(e.target.value)} value={email} required/>
+        <input placeholder={t("contact.placeholder")}  name="mail" type="text" className="form-email" onChange={e =>setEmail(e.target.value)} value={email} required/>
         <label htmlFor='mensaje'>{t("contact.message")} <span>*</span></label>
-        <textarea name="mensaje" type="textarea" className="formulario-mensaje" onChange={e =>setMensaje(e.target.value)} value={mensaje} required/>
+        <textarea name="mensaje" type="textarea" className="form-message" onChange={e =>setMensaje(e.target.value)} value={mensaje} required/>
         <p>{error ? t(`contact.err-${error}`):""}</p>
-        <button type="submit" disabled={error} className="formulario-boton">{t("contact.button")}</button>
-      </motion.form>
+        <button type="submit" disabled={error} className="form-button">{t("contact.button")}</button>
+      </form>
       <div>
-          <motion.div className="contenedor-fondo-imagen"
-           ref={ref}
-           initial="hidden"
-           animate={inView ? 'visible' : 'hidden'}
-           variants={contactPhotoAnimation}
-           transition={{duration:1, delay:1}}
-          >
+          <div className="contenedor-fondo-imagen">
             <div className='contenedor-imagen-contacto'>
              <img src={imagenContacto} alt="Foto de Facundo Quiroga" className='formulario-imagen'/>
             </div>
-         </motion.div>
-         <motion.div className="contacto-logos"
-         ref={ref}
-         initial="hidden"
-         animate={inView ? 'visible' : 'hidden'}
-         variants={contactPhotoAnimation}
-         transition={{duration:1, delay:1}}
-         >
+         </div>
+         <div className="contact-logos">
         <a href="https://www.linkedin.com/in/facundo-quirogaga/" target='_blanck'>
           <i class="bi bi-linkedin"></i>
         </a>
@@ -120,7 +80,7 @@ const Contact = ()=>{
         <a href="https://github.com/FacundoQuiroga9?tab=repositories" target='_blanck'>
           <i class="bi bi-github"></i>
         </a>
-      </motion.div>
+      </div>
         </div>
       </div>
 
@@ -130,8 +90,6 @@ const Contact = ()=>{
         <button onClick={ocultarModal} className='formulario-boton'>{t("contact.modal.button")}</button>
       </div>
       </div>
-
-    </div>
     </div>
   )
 

@@ -1,19 +1,19 @@
 #contacts{
   max-width: 90%;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
-.section-title{
-text-align: start;
+.contact-title{
+text-align: center;
 margin-bottom: 2rem;
 font-size: 3rem;
 line-height: 3.5rem;
-margin-left: 3rem;
 font-weight: bold;
 }
+
 .formulario-imagen{
   display: none;
 }
-.formulario{
+.form{
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@ input, textarea{
 textarea{
   height: 15vh;
 }
-.formulario-nombre, .formulario-mail, .formulario-mensaje{
+.form-name, .form-email, .form-message{
   background-color: #3b1f3d;
 }
 
@@ -47,7 +47,7 @@ span{
   font-weight: bold;
 }
 
-.formulario-boton{
+.form-button{
 border: none;
 background-color: #85479b;
 color: white;
@@ -73,35 +73,33 @@ color: #85479b;
   cursor: default;
   }
 
-.contacto-logos{
+.contact-logos{
   display: flex;
   justify-content: center;
   margin: 1rem auto;
 }
-.contacto-logos a{
-  height: 3rem;
-  width: 3rem;
-  margin: 0 1rem;
-  background-color: #85479b;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contact-logos > a{
+  width: fit-content;
+  height: fit-content;
+  margin: 0 .5rem;
+  background-color: var(--purple);
+  padding: .5rem;
+  border-radius: .5rem;
 }
 
-.contacto-logos a> i{
-  width: 100%;
-  margin: 0 auto;
-}
-.contacto-logos a:hover{
+.contact-logos > a:hover{
   background-color: white;
 }
 
-.contacto-logo{
-  width: 100%;
-  }
-  .contacto-logos a:hover i{
-    color: #85479b;
-  }
+.contact-logos a> i{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.contact-logos a:hover i{
+  color: #85479b;
+}
 
 form p{
   margin: 0 0 1rem 0;
@@ -113,7 +111,7 @@ form p{
 .desactivado{
   display: none;
 }
-.contacto-modal-contenedor{
+.modal-container{
   display: flex;
   position: fixed;
   top:0;
@@ -150,11 +148,14 @@ form p{
       width: 2.5rem;
     }
 }
-@media screen and (min-width: 750px){
-  .section-title{
-    font-size: 5rem;
-    line-height: 5.5rem;
-    margin-left: 7rem ;
+@media screen and (min-width: 768px){
+  .form-container{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .contact-title{
+    font-size: 2.5rem;
+    line-height: 3rem;
     margin-top: 4rem;
     }
     .contacto-logos a{
@@ -166,11 +167,10 @@ form p{
     }
 }
 
-@media (min-width: 1000px){
-  .section-title{
+@media (min-width: 992px){
+  .contact-title{
     font-size: 4rem;
     line-height: 4.5rem;
-    margin-left: 7rem ;
     margin-top: 0;
     }
   .contacto-contenedor{
@@ -181,13 +181,13 @@ form p{
     justify-content: center;
     align-items: center;
   }
-  .formulario-contenedor{
+  .form-container{
     display: flex;
     justify-content: space-around;
     width: 100%;
     align-items: center;
   }
-  .formulario{
+  .form{
     width: 40%;
     margin: 0;
   }
@@ -217,7 +217,7 @@ form p{
     object-fit: contain;
     border-radius: 1rem;
   }
-  .contacto-logos{
+  .contact-logos{
     margin: 3rem auto;
   }
 }
