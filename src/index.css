@@ -93,7 +93,7 @@ h1 , h2 , h3 , h4 , h5 , h6 , p ,span , a , strong , blockquote , i , b , u , em
   font-weight: inherit;
   font-style: inherit;
   text-decoration: none;
-  color:inherit;
+  color: var(--white);
 }
 /* Evitamos problemas con los pseudoelementos de quotes */
 blockquote:before, blockquote:after, q:before, q:after {
