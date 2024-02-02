@@ -113,7 +113,7 @@ form , input, textarea, select , button , label{
     font-size: inherit;
     hyphens: auto;
     background-color: transparent;
-    color:inherit;
+    color:var(--white);
     display: block;
     /* opcional */ appearance: none;
 }
@@ -152,6 +152,7 @@ body {
   hyphens: none;
   overflow-x: hidden;
   background-color: #170C18;
+  color: var(--white);
 }
 
 section{
