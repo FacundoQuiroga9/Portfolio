@@ -44,24 +44,16 @@
   "projects":{
     "section": "Projects",
     "card1":{
-      "title": "Ffarm Taid",
-      "techs": "HTML, CSS and React"
+      "title": "Fixi"
     },
     "card2":{
-      "title": "Dynamite Fireworks",
-      "techs": "HTML, CSS and Javascript"
+      "title": "Ffarm Taid"
     },
     "card3":{
-      "title": "Calculator",
-      "techs": "HTML, CSS, Javascript and React"
+      "title": "Dynamite Fireworks"
     },
     "card4":{
-      "title": "Task notepad",
-      "techs": "HTML, CSS, Javascript and React"
-    },
-    "card5":{
-      "title": "Fixi",
-      "techs": "HTML, CSS and Ruby on Rails"
+      "title": "Vivero Lahuen"
     }
   },
   "contact":{
