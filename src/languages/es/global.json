@@ -44,13 +44,16 @@
   "projects":{
     "section": "Proyectos",
     "card1":{
-      "title": "Ffarm Taid"
+      "title": "Fixi"
     },
     "card2":{
+      "title": "Ffarm Taid"
+    },
+    "card3":{
       "title": "Dynamite Fireworks"
     },
-    "card5":{
-      "title": "Fixi"
+    "card4":{
+      "title": "Vivero Lahuen"
     }
   },
   "contact":{

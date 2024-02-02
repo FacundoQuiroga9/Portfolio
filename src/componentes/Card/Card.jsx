@@ -13,9 +13,10 @@ const Card = ({imagen, nombre, url, url2, children})=>{
         <h3 className="card-title">{nombre}</h3>
         <div className="card-logos">{children}</div>
         <div className='buttons-container'>
-          <a href={url} className='card-button' target="_blanck">
+          {url && (<a href={url} className='card-button' target="_blanck">
            <i class="bi bi-github"></i>
           </a>
+          )}
           <a href={url2} className='card-button' target="_blanck">
             <i class="bi bi-window"></i>
           </a></div>
