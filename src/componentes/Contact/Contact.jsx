@@ -3,7 +3,6 @@ import imagenContacto from "../../imagenes/fq.png"
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import {useTranslation} from 'react-i18next'
-import { useInView } from 'react-intersection-observer';
 
 const Contact = ()=>{
   const [t, i18n]= useTranslation("global")
@@ -29,16 +28,12 @@ const Contact = ()=>{
     modal.classList.remove('contacto-modal-contenedor')
   }
 
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
-
   return(
-    <section ref={ref} id='contacts' className='container d-flex flex-column justify-content-center section'>
-    <h3 className={`contact-title text-center animate__animated ${inView ? 'animate__shakeX' : ''}`}>
+    <section id='contacts' className='container d-flex flex-column justify-content-center section'>
+    <h3 className="contact-title text-center">
       {t("contact.section")}
       </h3>
-      <div className={`form-container animate__animated ${inView ? 'animate__fadeIn animate__slower' : ''}`}>
+      <div className="form-container">
       <form action='' className='form' id='formulario'
           onSubmit={e=>{
             e.preventDefault();

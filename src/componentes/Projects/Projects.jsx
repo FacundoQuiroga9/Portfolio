@@ -14,21 +14,17 @@ import ror from '../../imagenes/ror.png'
 import react from '../../imagenes/react.png'
 import js from '../../imagenes/js.png'
 import wordpress from '../../imagenes/wordpress.png'
-import { useInView } from 'react-intersection-observer';
 
 
 const Projects = ()=>{
   const [t, i18n]= useTranslation("global")
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
 
   return(
-    <section ref={ref} id='projects' className='container d-flex flex-column justify-content-center section'>
-    <h3 className={`projects-title text-center animate__animated ${inView ? 'animate__shakeX' : ''}`}>
+    <section id='projects' className='container d-flex flex-column justify-content-center section'>
+    <h3 className="projects-title text-center">
       {t("projects.section")}
     </h3>
-    <div className={`row justify-content-center animate__animated ${inView ? 'animate__fadeIn animate__slower' : ''}`}>
+    <div className="row justify-content-center">
         <Card imagen= {image1} nombre={t("projects.card1.title")} url="https://github.com/elisaherre/FIXI_SERVICE" url2="http://www.fixiservice.xyz/">
           <img className='logo-card' src={html} alt="" />
           <img className='logo-card' src={css} alt="" />
