@@ -19,7 +19,6 @@ import Railslogo from '../SVGs/Rails/Rails'
 import Postgresqllogo from '../SVGs/PostgreSQL/Postgresql'
 import { useState } from 'react'
 import {useTranslation} from 'react-i18next'
-import { useInView } from 'react-intersection-observer';
 
 const Skills = ()=>{
     const [modalHtml, setModalHtml] = useState(false)
@@ -41,16 +40,12 @@ const Skills = ()=>{
     const [modalFigma, setModalFigma] = useState(false)
     const [t, i18n]= useTranslation("global")
 
-    const [ref, inView] = useInView({
-      triggerOnce: true,
-    });
-
   return(
-    <section ref={ref} className="container section text-center d-flex flex-column justify-content-center" id='skills'>
-      <h3 className={`skills-title animate__animated ${inView ? 'animate__shakeX' : ''}`}>
+    <section className="container section text-center d-flex flex-column justify-content-center" id='skills'>
+      <h3 className="skills-title">
         {t("skills.section")}
       </h3>
-      <div className={`row justify-content-center animate__animated ${inView ? 'animate__fadeIn animate__slower' : ''}`}>
+      <div className="row justify-content-center">
         <div className="col-10 col-md-8 col-lg-5">
           <h4 className="skills-subtitle">
             {t("skills.development.title")}

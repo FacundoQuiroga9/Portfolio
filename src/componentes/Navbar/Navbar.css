@@ -34,8 +34,8 @@
   transition: all .5s
 }
 .header-li:hover{
-  background-color: white;
-  color: #85479b;
+  background-color: white ;
+  color: var(--purple);
   border-radius: .3rem;
 }
 .header-li a{
