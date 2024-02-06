@@ -1,7 +1,6 @@
 import './Hero.css'
 import fotofq1 from '../../imagenes/FacundoQuiroga2.png'
 import {useTranslation} from 'react-i18next'
-import 'animate.css';
 
 
 const Hero = ()=>{
