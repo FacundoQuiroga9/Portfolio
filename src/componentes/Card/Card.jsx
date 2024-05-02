@@ -17,9 +17,12 @@ const Card = ({imagen, nombre, url, url2, children})=>{
            <i class="bi bi-github"></i>
           </a>
           )}
-          <a href={url2} className='card-button' target="_blanck">
-            <i class="bi bi-window"></i>
-          </a></div>
+          {url2 && (
+            <a href={url2} className='card-button' target="_blank" rel="noopener noreferrer">
+              <i className="bi bi-window"></i>
+            </a>
+          )}
+          </div>
 
       </div>
     </div>
